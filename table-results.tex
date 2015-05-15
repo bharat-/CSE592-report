@@ -1,0 +1,92 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Table(s) for results of current experiments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table*}[th]
+\small
+\centering
+%\begin{tabularx}{\linewidth}{|c|c|c|c|c|c|c|X|}
+
+\begin{tabular}{ c|c|c|c|c|c|c|c|c| }
+  \cline{2-9}
+  & 
+  \multicolumn{2}{c}{\textbf{$u_{1}$}} &
+  \multicolumn{2}{|c}{\textbf{$u_{2}$}} &
+  \multicolumn{2}{|c}{\textbf{$u_{3}$}} &
+  \multicolumn{2}{|c|}{\textbf{root}}  \\
+  \cline{2-9}
+  \multicolumn{1}{c|}{} &
+  with & without & with & without & with & without & with & without\\
+  \multicolumn{1}{c|}{} &
+  change & changes & changes & changes & changes & changes & changes &
+  changes\\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{create file}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{create dir}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{remove file}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{remove dir}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{create symlink}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{read symlink}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{write symlink}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{create hardlink}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{write hardlink}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{stat}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{change dir}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{read file}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{write file}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{create tar}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{untar}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{make}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{rename}}
+  & Y & Y & N & Y & N & Y & N & Y \\
+  \hline
+\end{tabular}
+
+%\end{tabularx}
+\caption{\capfont Results of different file system operations for
+different users, with and without the changes.}
+\label{tab:results}
+\end{table*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Emacs:
+% Local variables:
+% fill-column: 70
+% End:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Vim:
+% vim:textwidth=70
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LocalWords:  PEAFS PEAIO Lustre SBU HMC config

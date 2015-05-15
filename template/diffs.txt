@@ -1,0 +1,463 @@
+? diffs.txt
+? foo.tex
+Index: ChangeLog
+===================================================================
+RCS file: /scm/cvsroot/fsl/bib/ChangeLog,v
+retrieving revision 1.389
+diff -u -r1.389 ChangeLog
+--- ChangeLog	23 Sep 2012 20:44:34 -0000	1.389
++++ ChangeLog	5 Oct 2012 05:34:01 -0000
+@@ -1,3 +1,7 @@
++2012-10-04  Erez Zadok  <ezk@cs.sunysb.edu>
++
++	* master.bib: remove extra YEAR.
++
+ 2012-09-23  Erez Zadok  <ezk@shekel.local>
+ 
+ 	* master.bib: rename bibtex entry key name (kuenning ->
+Index: master.bib
+===================================================================
+RCS file: /scm/cvsroot/fsl/bib/master.bib,v
+retrieving revision 1.2022
+diff -u -r1.2022 master.bib
+--- master.bib	4 Oct 2012 21:49:30 -0000	1.2022
++++ master.bib	5 Oct 2012 05:34:06 -0000
+@@ -292,20 +292,20 @@
+ }
+ 
+ @inproceedings{hotstorage12tokufs,
+-  author = {Esmet, John and Bender, Michael A. and Farach-Colton, Martin
+-	    and Kuszmaul, Bradley C.},
+-  title = {The TokuFS streaming file system},
+-  booktitle = {Proceedings of the 4th USENIX conference on Hot Topics in
+-               Storage and File Systems},
+-  series = {HotStorage'12},
+-  year = {2012},
+-  location = {Boston, MA},
+-  pages = {14--14},
+-  numpages = {1},
+-  url = {http://dl.acm.org/citation.cfm?id=2342806.2342820},
+-  acmid = {2342820},
+-  publisher = {USENIX Association},
+-  address = {Berkeley, CA, USA},
++  author =	 {Esmet, John and Bender, Michael A. and Farach-Colton,
++                  Martin and Kuszmaul, Bradley C.},
++  title =	 {The TokuFS streaming file system},
++  booktitle =	 {Proceedings of the 4th USENIX conference on Hot Topics in
++                  Storage and File Systems},
++  series =	 {HotStorage'12},
++  year =	 2012,
++  location =	 {Boston, MA},
++  pages =	 {14--14},
++  numpages =	 1,
++  url =		 {http://dl.acm.org/citation.cfm?id=2342806.2342820},
++  acmid =	 2342820,
++  publisher =	 {USENIX Association},
++  address =	 {Berkeley, CA, USA},
+ }
+ 
+ @inproceedings{hotstorage11twigg,
+@@ -1874,15 +1874,15 @@
+ % Zhichao adds GreenDM related paper
+ 
+ @article{barroso2009datacenter,
+-  author= "L. A. Barroso and U. H{\"o}lzle",
+-  title =   "{The Datacenter as a Computer: An Introduction to the Design of
+-    Warehouse-Scale Machines}",
+-  journal={Synthesis Lectures on Computer Architecture},
+-  volume={4},
+-  number={1},
+-  pages={1--108},
+-  year={2009},
+-  publisher={Morgan \& Claypool Publishers}
++  author =	 "L. A. Barroso and U. H{\"o}lzle",
++  title =	 "{The Datacenter as a Computer: An Introduction to the
++                  Design of Warehouse-Scale Machines}",
++  journal =	 {Synthesis Lectures on Computer Architecture},
++  volume =	 4,
++  number =	 1,
++  pages =	 {1--108},
++  year =	 2009,
++  publisher =	 {Morgan \& Claypool Publishers}
+ }
+ 
+ @inproceedings{eurosys_12_flashtier,
+@@ -1898,15 +1898,15 @@
+ }
+ 
+ @inproceedings{sievestore10isca,
+-  author = "T. Pritchett and M. Thottethodi",
+-  title = "{SieveStore: A Highly-Selective, Ensemble-level Disk Cache for
+-       Cost-Performance}",
+-  booktitle = {Proceedings of the 37th Annual International Symposium on
+-        Computer Architecture},
+-  series = {ISCA '10},
+-  year = {2010},
+-  location = {Saint-Malo, France}
+-} 
++  author =	 "T. Pritchett and M. Thottethodi",
++  title =	 "{SieveStore: A Highly-Selective, Ensemble-level Disk Cache
++                  for Cost-Performance}",
++  booktitle =	 {Proceedings of the 37th Annual International Symposium on
++                  Computer Architecture},
++  series =	 {ISCA '10},
++  year =	 2010,
++  location =	 {Saint-Malo, France}
++}
+ 
+ @MISC{tier,
+   TITLE =	 "{A Tiered Storage Blockdevice}",
+@@ -1921,15 +1921,15 @@
+ }
+ 
+ @MISC{wiki_dm,
+-  TITLE = "{Device Mapper}",
+-  NOTE =  "\url{http://en.wikipedia.org/wiki/Device_mapper}", 
+-  KEY = "wiki_dm"
++  TITLE =	 "{Device Mapper}",
++  NOTE =	 "\url{http://en.wikipedia.org/wiki/Device_mapper}",
++  KEY =		 "wiki_dm"
+ }
+ 
+ @MISC{wiki_gamma_distribution,
+-  TITLE = "{Gamma Distribution}",
+-  NOTE =  "\url{http://en.wikipedia.org/wiki/Gamma_distribution}", 
+-  KEY = "wiki_gamma_distribution"
++  TITLE =	 "{Gamma Distribution}",
++  NOTE =	 "\url{http://en.wikipedia.org/wiki/Gamma_distribution}",
++  KEY =		 "wiki_gamma_distribution"
+ }
+ 
+ @MISC{debugfs,
+@@ -11214,7 +11214,8 @@
+ 
+ @MISC{filebench-wml-web,
+   TITLE =	 "{Filebench Workload Model Language (WML)}",
+-  NOTE =	 "\url{http://sourceforge.net/apps/mediawiki/filebench/index.php?title=Filebench_Workload_Language}",
++  NOTE =
++                  "\url{http://sourceforge.net/apps/mediawiki/filebench/index.php?title=Filebench_Workload_Language}",
+   KEY =		 "WML"
+ }
+ 
+@@ -18299,8 +18300,8 @@
+ 
+ @INPROCEEDINGS{fast12_Wu,
+   author =	 {G. Wu and X. He},
+-  title =	 "{Reducing SSD Read Latency via NAND Flash Program and Erase
+-                  Suspension}",
++  title =	 "{Reducing SSD Read Latency via NAND Flash Program and
++                  Erase Suspension}",
+   booktitle =	 {FAST'12 Proceedings of the 8th USENIX Conference on File
+                   and Storage Technologies},
+   year =	 2012,
+@@ -23478,13 +23479,13 @@
+                   E. Zadok",
+   TITLE =	 "{InterAspect}: Aspect-Oriented Instrumentation with {GCC}",
+   JOURNAL =	 "Formal Methods in System Design",
+-  MONTH =	"August",
++  MONTH =	 "August",
+   YEAR =	 2012,
+   PUBLISHER =	 "Springer",
+-  URL =	 "\url{http://link.springer.com/article/10.1007%2Fs10703-012-0171-3}"
++  URL =
++                  "\url{http://link.springer.com/article/10.1007%2Fs10703-012-0171-3}"
+ }
+ 
+-
+ @ARTICLE{wallstreet09splunk,
+   AUTHOR =	 "P. Tam",
+   TITLE =	 "{Start-Ups Aim to Help Tame Corporate Data}",
+@@ -23518,15 +23519,16 @@
+ @MISC{windows-search,
+   KEY =		 "Windows Search",
+   TITLE =	 "{Microsoft's Windows Search}",
+-  NOTE =         "\url{http://http://msdn.microsoft.com/en-us/library/windows/desktop/ff628790%28v=vs.85%29.aspx}"
++  NOTE =
++                  "\url{http://http://msdn.microsoft.com/en-us/library/windows/desktop/ff628790%28v=vs.85%29.aspx}"
+ }
+ 
+ @INPROCEEDINGS{mittal:database,
+-AUTHOR = "Neeraj Mittal and Hui-I Hsiao",
+-TITLE = "Database Managed External File Update",
+-BOOKTITLE = "ICDE'01",
+-PAGES = {557-564},
+-YEAR = {2001}, 
++  AUTHOR =	 "Neeraj Mittal and Hui-I Hsiao",
++  TITLE =	 "Database Managed External File Update",
++  BOOKTITLE =	 "ICDE'01",
++  PAGES =	 {557-564},
++  YEAR =	 2001,
+ }
+ 
+ @UNPUBLISHED{beagle08,
+@@ -24208,7 +24210,6 @@
+   JOURNAL =	 {PVLDB},
+   VOLUME =	 5,
+   NUMBER =	 11,
+-  YEAR =	 2012,
+   PAGES =	 {1627--1637},
+   MONTH =	 "August",
+   YEAR =	 2012,
+@@ -24715,15 +24716,15 @@
+   PAGES =	 "61--70"
+ }
+ 
+-@INPROCEEDINGS{vatm, 
+-  AUTHOR = "Z. Li and A. Desai and C. Bhatt and E. Zadok", 
+-  TITLE = "vATM: vSphere Adaptive Task Management", 
+-  BOOKTITLE = "In Proceedings of the Seventh International Workshop on Feedback
+-      Computing (FC'12)", 
+-  MONTH = "September", 
+-  LOCATION = "San Jose, CA", 
+-  NOTE = "To appear", 
+-  YEAR = 2012
++@INPROCEEDINGS{vatm,
++  AUTHOR =	 "Z. Li and A. Desai and C. Bhatt and E. Zadok",
++  TITLE =	 "vATM: vSphere Adaptive Task Management",
++  BOOKTITLE =	 "In Proceedings of the Seventh International Workshop on
++                  Feedback Computing (FC'12)",
++  MONTH =	 "September",
++  LOCATION =	 "San Jose, CA",
++  NOTE =	 "To appear",
++  YEAR =	 2012
+ }
+ 
+ @INBOOK{tmbook:programming,
+@@ -24961,8 +24962,10 @@
+ }
+ 
+ @INPROCEEDINGS{atc12-gulati,
+-  AUTHOR =	 "A. Gulati and G. Shanmuganathan and X. Zhang and P. Varman",
+-  TITLE =	 "Demand Based Hierarchical QoS Using Storage Resource Pools",
++  AUTHOR =	 "A. Gulati and G. Shanmuganathan and X. Zhang and
++                  P. Varman",
++  TITLE =	 "Demand Based Hierarchical QoS Using Storage Resource
++                  Pools",
+   CROSSREF =	 "usenix12",
+ }
+ 
+@@ -25208,12 +25211,12 @@
+ }
+ 
+ @inproceedings{2011-model_storage_perf_in_virt_syst-dcperf,
+-        title           = "A model of storage {I/O} performance
+-                                interference in virtualized systems",
+-        author          = "G. Casale and S. Kraft and D. Krishnamurthy",
+-        booktitle       = "Proceedings of the International Workshop on
+-                                Data Center Performance (DCPerf)",
+-        year            = 2011,
++  title =	 "A model of storage {I/O} performance interference in
++                  virtualized systems",
++  author =	 "G. Casale and S. Kraft and D. Krishnamurthy",
++  booktitle =	 "Proceedings of the International Workshop on Data Center
++                  Performance (DCPerf)",
++  year =	 2011,
+ }
+ 
+ @article{2012-storage_contention_model_in_cloud-ssm,
+@@ -25255,77 +25258,85 @@
+ @MANUAL{vmware-vmdk,
+   AUTHOR =	 "{VMware, Inc.}",
+   TITLE =	 "Virtual Disk Format 5.0",
+-  NOTE =	"\url{http://www.vmware.com/support/developer/vddk/vmdk_50_technote.pdf}",
++  NOTE =
++                  "\url{http://www.vmware.com/support/developer/vddk/vmdk_50_technote.pdf}",
+   YEAR =	 2007,
+ }
+ 
+ @MISC{linux-default-fs-web,
+   TITLE =	 "{Comparison of Linux Distributions. Wikipedia.}",
+-  NOTE = 	"\url{http://en.wikipedia.org/wiki/Comparison_of_Linux_distributions#Technical}",
++  NOTE =
++                  "\url{http://en.wikipedia.org/wiki/Comparison_of_Linux_distributions#Technical}",
+   KEY =		 "Comparison"
+ }
+ 
+ @MISC{vcloud-web,
+   TITLE =	 "{VMware vCloud}",
+-  NOTE = 	"\url{http://vcloud.vmware.com/}",
++  NOTE =	 "\url{http://vcloud.vmware.com/}",
+   KEY =		 "vCloud"
+ }
+ 
+ @MISC{openstack-web,
+   TITLE =	 "{OpenStack Foundation}",
+-  NOTE = 	"\url{http://www.openstack.org/}",
++  NOTE =	 "\url{http://www.openstack.org/}",
+   KEY =		 "OpenStack"
+ }
+ 
+ @MISC{jetstress-web,
+   TITLE =	 "{Microsoft Exchange Server JetStress 2010}",
+-  NOTE = 	"\url{http://www.microsoft.com/en-us/download/details.aspx?id=4167}",
++  NOTE =
++                  "\url{http://www.microsoft.com/en-us/download/details.aspx?id=4167}",
+   KEY =		 "JetStress"
+ }
+ 
+ @MISC{jetstress-dbperf-web,
+   TITLE =	 "{Understanding Database and Log Performance Factors}",
+-  NOTE =	 "\url{http://technet.microsoft.com/en-us/library/ee832791.aspx}",
++  NOTE =
++                  "\url{http://technet.microsoft.com/en-us/library/ee832791.aspx}",
+   KEY =		 "JetStress-dbperf"
+ }
+ 
+ @TECHREPORT{gpfs_problem_determ_guide,
+   AUTHOR =	 "{IBM}",
+-  TITLE =	 "{G}eneral {P}arallel {F}ile {S}ystem Problem Determination Guide",
++  TITLE =	 "{G}eneral {P}arallel {F}ile {S}ystem Problem Determination
++                  Guide",
+   NUMBER =	 "GA22-7969-02",
+   INSTITUTION =	 "IBM",
+   MONTH =	 "December",
+   YEAR =	 2004,
+-  NOTE = "\url{http://pic.dhe.ibm.com/infocenter/db2luw/v9r8/index.jsp?topic=\%2Fcom.ibm.db2.luw.sd.doc\%2Fdoc\%2Ft0056934.html}"
++  NOTE =
++                  "\url{http://pic.dhe.ibm.com/infocenter/db2luw/v9r8/index.jsp?topic=\%2Fcom.ibm.db2.luw.sd.doc\%2Fdoc\%2Ft0056934.html}"
+ }
+ 
+ @INPROCEEDINGS{kurmas2006msst,
+   AUTHOR =	 "Z. Kurmas and J. Zito and L. Trevino and R. Lush",
+-  TITLE =	 "Generating a Jump Distance Based Synthetic Disk Access Pattern",
+-  BOOKTITLE =	 "Proceedings of the International IEEE Symposium on
+-                  Mass Storage Systems and Technologies (MSST)",
++  TITLE =	 "Generating a Jump Distance Based Synthetic Disk Access
++                  Pattern",
++  BOOKTITLE =	 "Proceedings of the International IEEE Symposium on Mass
++                  Storage Systems and Technologies (MSST)",
+   YEAR =	 2006
+ }
+ 
+ @INPROCEEDINGS{atc97-inodedata,
+   AUTHOR =	 "G. R. Ganger and M. F. Kaashoek",
+-  TITLE =	 "Embedded inodes and explicit grouping: exploiting disk 
+-			bandwidth for small files",
++  TITLE =	 "Embedded inodes and explicit grouping: exploiting disk
++                  bandwidth for small files",
+   CROSSREF =	 "usenix97",
+ }
+ 
+ @UNPUBLISHED{idc2012ioperfgap,
+   AUTHOR =	 "Jeff Janukowicz and Matt Eastwood",
+-  TITLE =	 "Storage Acceleration: Solving the I/O 
+-		  Performance Gap Problem",
++  TITLE =	 "Storage Acceleration: Solving the I/O Performance Gap
++                  Problem",
+   NOTE =	 "IDC 1359, \url{www.idc.com}",
+   MONTH =	 "September",
+   YEAR =	 2012,
+ }
+ 
+ @MISC{nytimes2012datacenter,
+-  TITLE =	"{Power, Pollution and the Internet}",
+-  NOTE =	"\url{http://www.nytimes.com/2012/09/23/technology/data-centers-waste-vast-amounts-of-energy-belying-industry-image.html?smid=pl-share}",
++  TITLE =	 "{Power, Pollution and the Internet}",
++  NOTE =
++                  "\url{http://www.nytimes.com/2012/09/23/technology/data-centers-waste-vast-amounts-of-energy-belying-industry-image.html?smid=pl-share}",
+   MONTH =	 "September",
+   YEAR =	 2012,
+   KEY =		 "DatacenterPower"
+@@ -25333,18 +25344,18 @@
+ 
+ @TECHREPORT{gartner:datacenterpower,
+   AUTHOR =	 "Rakesh Kumar",
+-  TITLE =	 "{Data Center Power, Cooling and Space: A Worrisome
+-			Outlook for the Next Two Year}",
++  TITLE =	 "{Data Center Power, Cooling and Space: A Worrisome Outlook
++                  for the Next Two Year}",
+   INSTITUTION =	 "Gartner, Inc.",
+-  NUMBER =	"G00174420",
+-  YEAR =	2010, 
++  NUMBER =	 "G00174420",
++  YEAR =	 2010,
+   NOTE =	 "\url{www.gartner.com}",
+ }
+ 
+ @inproceedings{asplos2012feiner,
+   author =	 "Peter Feiner and Ashvin Goel and Angela Demke Brown",
+-  title =	 "Comprehensive Kernel Instrumentation via Dynamic
+-			Binary Translation ",
++  title =	 "Comprehensive Kernel Instrumentation via Dynamic Binary
++                  Translation ",
+   booktitle =	 {Proceedings of the International Conference on
+                   Architectural Support for Programming Languages and
+                   Operating Systems (ASPLOS)},
+@@ -25352,17 +25363,17 @@
+ }
+ 
+ @inproceedings{fast2012fryer,
+-  author =	 "Daniel Fryer and Kuei Sun and Rahat Mahmood
+-			and TingHao Cheng and Shaun Benjamin and Ashvin Goel
+-				and Angela Demke Brown",
++  author =	 "Daniel Fryer and Kuei Sun and Rahat Mahmood and TingHao
++                  Cheng and Shaun Benjamin and Ashvin Goel and Angela Demke
++                  Brown",
+   title =	 "{Recon: Verifying File System Consistency at Runtime}",
+   CROSSREF =	 "fast12",
+ }
+ 
+ @TECHREPORT{shetty2013kvfs,
+-  AUTHOR = "Pradeep J. Shetty and Richard P. Spillane and
+-		Ravikant R. Malpani and Binesh Andrews and
+-              		and Justin Seyster and Erez Zadok", 
++  AUTHOR =	 "Pradeep J. Shetty and Richard P. Spillane and Ravikant
++                  R. Malpani and Binesh Andrews and and Justin Seyster and
++                  Erez Zadok",
+   TITLE =	 "Unifying File Systems and Databases Efficiently",
+   INSTITUTION =	 {Stony Brook University Computer Science},
+   YEAR =	 2012,
+@@ -25371,10 +25382,10 @@
+ }
+ 
+ @TECHREPORT{tarasov2013t2mvirt,
+-  AUTHOR =	"Vasily Tarasov and Dean Hildebrand
+-			and Geoff Kuenning and Erez Zadok", 
+-  TITLE =	 "Virtual Machine Workloads:
+-			The Case for New NAS Benchmarks",
++  AUTHOR =	 "Vasily Tarasov and Dean Hildebrand and Geoff Kuenning and
++                  Erez Zadok",
++  TITLE =	 "Virtual Machine Workloads: The Case for New NAS
++                  Benchmarks",
+   INSTITUTION =	 {Stony Brook University Computer Science},
+   YEAR =	 2012,
+   MONTH =	 "September",
+@@ -25382,27 +25393,29 @@
+ }
+ 
+ @MISC{theriseofwomeninharvard,
+-  TITLE =	"{The Rise Of Women: “41\% Of Harvard Computer Scence
+-			Majors Are Women” (Infographic)}",
+-  NOTE =	"\url{http://www.women2.com/the-rise-of-women-41-of-harvard-computer-scence-majors-are-women-infographic/}",
++  TITLE =	 "{The Rise Of Women: “41\% Of Harvard Computer
++                  Scence Majors Are Women” (Infographic)}",
++  NOTE =
++                  "\url{http://www.women2.com/the-rise-of-women-41-of-harvard-computer-scence-majors-are-women-infographic/}",
+   MONTH =	 "October",
+   YEAR =	 2012,
+   KEY =		 "theriseofwomeninharvard"
+ }
+ 
+ @MISC{hmc_giving_women_access_code,
+-  TITLE =	"{Giving Women the Access Code}",
+-  NOTE =	"\url{http://www.nytimes.com/2012/04/03/science/giving-women-the-access-code.html}",
++  TITLE =	 "{Giving Women the Access Code}",
++  NOTE =
++                  "\url{http://www.nytimes.com/2012/04/03/science/giving-women-the-access-code.html}",
+   MONTH =	 "April",
+   YEAR =	 2012,
+   KEY =		 "hmc_giving_women_access_code"
+ }
+ 
+ @BOOK{pcabook,
+-  AUTHOR =       "I.T. Jolliffe",
+-  TITLE =        "Principal Component Analysis",
+-  PUBLISHER =    "Springer",
+-  YEAR =         2010,
++  AUTHOR =	 "I.T. Jolliffe",
++  TITLE =	 "Principal Component Analysis",
++  PUBLISHER =	 "Springer",
++  YEAR =	 2010,
+ }
+ 
+ @BOOK{svmbook,

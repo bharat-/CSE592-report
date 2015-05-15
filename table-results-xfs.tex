@@ -1,0 +1,46 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Table(s) for results of current experiments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table*}[th]
+\small
+\centering
+%\begin{tabularx}{\linewidth}{|c|c|c|c|c|c|c|X|}
+
+\begin{tabular}{ c|c|c|c|c|c|c| }
+  \cline{2-7}
+  & 
+  \multicolumn{2}{c}{\textbf{root}} &
+  \multicolumn{2}{|c}{\textbf{user1}} &
+  \multicolumn{2}{|c|}{\textbf{root\_notallowed}}\\ 
+  \cline{2-7}
+  \multicolumn{1}{c|}{} &
+  with & without & with & without & with & without\\
+  \multicolumn{1}{c|}{} &
+  changes & changes & changes & changes & changes & changes\\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{xfstests}}
+  & 56(68) & 56(68) & 32(68) & 32(68) & 0(68) & - \\
+  \hline
+  \multicolumn{1}{|c|}{\textbf{eCryptfs-tests}}
+  & 25(25) & 25(25) & 22(25) & 22(25) & 0(25) & - \\
+  \hline
+\end{tabular}
+
+%\end{tabularx}
+\caption{\capfont Number of passed tests and total tests for
+\emph{XFSTEST} and \emph{eCryptfs-tests} for different users, with and
+without the changes.}
+\label{tab:results-xfs}
+\end{table*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Emacs:
+% Local variables:
+% fill-column: 70
+% End:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Vim:
+% vim:textwidth=70
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LocalWords:  PEAFS PEAIO Lustre SBU HMC config

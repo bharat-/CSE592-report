@@ -1,0 +1,118 @@
+#!/bin/bash
+# Finds all unembedded fonts in the given directory sub-tree and provides a
+# list of where they are referred to from within the sub-tree.
+
+EXHAUSTIVESEARCH="false"
+TEXTSEARCH="false"
+args=`getopt d:et: $*`
+# you should not use `getopt abo: "$@"` since that would parse
+# the arguments differently from what the set command below does.
+if [ $? != 0 ]
+then
+	echo 'Usage: funembeded <-d directory> [-t list-o-text-files] [-e]'
+	exit 2
+fi
+set -- $args
+# You cannot use the set command with a backquoted getopt directly,
+# since the exit code from getopt would be shadowed by those of
+# set,
+# which is zero by definition.
+for i
+do
+	case "$i"
+	in
+	-p)
+		EXHAUSTIVESEARCH="true"
+		shift;;
+	-d)
+		DIRECTORY="$2"; shift;
+		shift;;
+	-t)
+		TEXTSEARCH="true"; TEXTFILES="$2"; shift;
+		shift;;
+	--)
+		shift; break;;
+esac
+done
+
+# Must specify a directory
+if [ ! -n "$DIRECTORY" ]
+then
+	echo "Error: must specify the directory sub-tree to search"
+	exit 1
+fi
+
+# Must have pdffonts
+if ! which pdffonts > /dev/null 2>&1
+then
+	echo "Error: funembeded requires pdffonts to be installed"
+	exit 1
+fi
+
+# First we get the list of files
+listbrokenpdfs()
+{
+	find $DIRECTORY -type f | \
+		grep "\.pdf$" | \
+		while read line
+		do
+			# Skip files that end in .pdf but whose headers say aren't pdf
+			# files
+			if file $line | grep -q "PDF"
+			then
+				echo "PATH: $line"
+				pdffonts $line 2>&1
+			fi
+		done | \
+		awk '
+			BEGIN {
+				recState = 0;
+			}
+			/PATH:/ {
+				if (recState == 1) {
+					print path;
+				}
+				path=$0;
+				recState = 0;
+			}
+			!/PATH:/ {
+				if ($2 == "TrueType")
+					emb = $3
+				else if ($2 == "CID" && $3 == "Type")
+					emb = $5
+				else
+					emb = $4
+				if (emb == "no") {
+					recState = 1;
+				}
+			}
+			/Error:/ {
+				printf "Error reading %s\n",path;
+			}' | \
+		sed 's/PATH: //'
+}
+
+if [ "$EXHAUSTIVESEARCH" = "true" ]
+then
+	listbrokenpdfs | \
+		while read line
+		do
+			echo "Searching for references to '`basename $line`'"
+			grep -iR `basename $line` *
+		done
+elif [ "$TEXTSEARCH" = "true" ]
+then
+	listbrokenpdfs |\
+		while read line
+		do
+			while read file
+			do
+				PDFREF=`basename $line | sed 's/\.pdf$//'`
+				grep --color -HniR "$PDFREF" $file
+			done < $TEXTFILES
+		done
+else
+	listbrokenpdfs
+fi
+
+exit 0

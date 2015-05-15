@@ -1,0 +1,4 @@
+eCryptfs performance results
+make(mins)	162.2	0.05	164.1	0.24
+tar(secs)	10.84	0.61	11.02	0.99
+untar(secs)	13.76	1.23	13.32	0.35

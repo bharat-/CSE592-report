@@ -1,0 +1,332 @@
+\section{Design}
+\label{Design}
+
+%Opening text...  Typical length: 3-5 pages.
+%
+%Hardest section to write.  A lot of possible interdependencies.
+%
+%If you find that you have to have a ``forward'' reference to a
+%section of text you've not described yet, it usually means that the
+%structure of your paper is wrong.  So avoid fwd refs.  Backward
+%references to previous sections is ok, as long as it's not too far in
+%the beginning of the paper.
+%
+%Do an outline of design even print a Table of Contents
+%
+%Opening: tell reader what to expect.
+%
+%Open with key design goals, in descending importance.
+%
+%General rule: whenever you LIST 2 or more items, THINK about their
+%order (should it be importance order? chronological?  categorical?)
+%
+%(A) What are your design goals, and what do they get you?  Separate
+%goals with HOW you achieve them.  Possible goals can include:
+%
+%- improved performance
+%
+%- improved scalability (same as perf.  but need to test "multiple"
+%machines)
+%
+%- better energy consumption
+%
+%- improved security (hard to prove "better" security)
+%
+%- versatility: has more functionality that can be utilized in more
+%settings.  A generalization of past specific work.
+%
+%- compatibility: works with many existing systems, possibly
+%unmodified (or with few modifications).
+%
+%- other design goals?
+%
+%(B) briefly describe HOW you would accomplish each of your design
+%goals.
+%
+%(C) Show a high-level architectural figure whole system, and describe
+%every "box" of section of the figure.
+%
+%Start with high-level detail of each components, then go into greater
+%detail.
+%
+%(D) Bulk of design: go over every design goal and architectural
+%component, and describe it in detail.
+%
+%Key: don't just say WHAT you did, but WHY you did that.  WHY, WHY,
+%WHY!
+%
+%Tense: past tense for what was designed, present tense to describe
+%system operation.  Switch b/t past and present consistently.  NO
+%future tense!
+%
+%-----------------------------------------------------------------------------
+
+\paragraph{Threat Model}
+Multi user systems are prevalent in an enterprise environment.  If
+eCryptfs is deployed, it can stop outsider attack, but it is still
+prone to insider attack.  For e.g., a user $u_1$ has illegally gained
+access to trusted system and can now access a mounted eCryptfs
+directory, which was intended to be used by other user.  Similarly
+root user can access data belonging to others.  In an ideal case no
+user other than the file owner should be allowed access to the
+encrypted data.
+
+%File Access Policy: Explain?
+
+We aim to add policy based file encryption scheme that prevents
+illegal access to encrypted file in case of a multi user environment.
+Our design goals are as follows.
+\begin{itemize}[leftmargin=*]
+\item \textbf{UID based Authorization}
+eCryptfs should allow a set of authorized users to access and
+transparently encrypt or decrypt files.  eCryptfs should allow
+administrators to add or update a user to the set of authorized users.
+\item \textbf{Revoke Access}
+eCryptfs should be able to revoke access for a user legally, but also
+making sure that there must be at least 1 valid user per file (do not
+revoke all of them).
+\end{itemize}
+
+%\paragraph{eCryptfs before changes}
+
+\paragraph{eCryptfs before changes}
+The Figure~\ref{fig:eCryptfs_before_changes} shows existing
+functionality of eCryptfs.  eCryptfs is a stacked file system and has
+mapping to VFS objects and operations.
+\paragraph{VFS Objects}
+eCryptfs maintains a reference between objects of lower file system
+and objects in eCryptfs file system.  The reference is maintained via
+a set of objects like
+\begin{itemize}[leftmargin=*]
+\item \emph{private\_data} of file object
+\item \emph{u.generic\_ip} of inode object
+\item \emph{d\_fsdata} of dentry object
+\item \emph{s\_fs\_info} of superblock object
+\end{itemize}
+The \emph{inode u.generic\_ip} have pointer to \emph{struct
+ecryptfs\_crypt\_stat} which contains file crypto header information.
+The crypto header is stored persistently along with file data on disk.
+
+\paragraph{VFS Operations}
+At mount time, eCryptfs-utils generates an authentication token for
+the passphrase specified by the user.  These tokens are stored in
+Linux kernel keyring and are used to setup crypto context for the
+eCryptfs files.  VFS operations from all the users just try to
+validate the file crypt headers and the authentication token.  If the
+key identifier in the header is matched against the mount-wide key
+identifier, the request is passed to the lower file system to perform
+actual IO.  We can see here that there is no support for per user
+access check , access revoke and expiry in eCryptfs kernel.  We have
+tried to address some of these limitations in our design.
+
+% Insert struct code
+\lstset{frame=l,
+  language=C,
+%numbers=left,
+%stepnumber=1,
+%numbersep=5pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2,
+  keepspaces=true,
+  captionpos=b,
+%  breaklines=true,
+  basicstyle=\ttfamily
+%breakatwhitespace=true,
+}
+\begin{consistifyoff}
+\begin{lstlisting} [float,floatplacement=h,label=allowed_list,caption={ecryptfs\_allowed\_list structure}]
+struct ecryptfs_allowed_list {
+  uid_t a_uid[4];   /*allowed UID*/
+  uid_t a_gid[4];   /*allowed GID*/
+  uid_t a_suid[4];  /*saved UID*/
+  uid_t a_sgid[4];  /*saved GID*/
+  uid_t a_euid[4];  /*effective UID*/
+  uid_t a_egid[4];  /*effective GID*/
+};
+\end{lstlisting}
+
+\begin{lstlisting} [float=*,floatplacement=H,label=mount_crypt_stat, caption={ecryptfs\_mount\_crypt\_stat\ structure}]
+struct ecryptfs_mount_crypt_stat {
+  u32 flags;
+  struct list_head global_auth_tok_list;
+  struct mutex global_auth_tok_list_mutex;
+  size_t global_default_cipher_key_size;
+  size_t global_default_fn_cipher_key_bytes;
+  unsigned char global_default_cipher_name[ECRYPTFS_MAX_CIPHER_NAME_SIZE + 1];
+  unsigned char global_default_fn_cipher_name[ECRYPTFS_MAX_CIPHER_NAME_SIZE + 1];
+  char global_default_fnek_sig[ECRYPTFS_SIG_SIZE_HEX + 1]; 
+  struct ecryptfs_allowed_list alist;
+};
+\end{lstlisting}
+
+% Insert code.
+\begin{lstlisting} [float=*,floatplacement=H,label=ecryptfs_permission, caption={ecryptfs\_permission function}]
+static int
+ecryptfs_permission(struct inode *inode, int mask)
+{
+  struct ecryptfs_mount_crypt_stat *mount_crypt_stat;
+  struct ecryptfs_allowed_list *alist;
+  uid_t cuid;
+  mount_crypt_stat = &ecryptfs_superblock_to_private(inode->i_sb)->mount_crypt_stat;
+  cuid = current_uid().val;
+  if (mount_crypt_stat) {
+    alist = &mount_crypt_stat->alist;
+    if (cuid != alist->a_uid[0] && cuid != alist->a_uid[1] &&
+        cuid != alist->a_uid[2] && cuid != alist->a_uid[3]) {
+      return -EPERM;
+    }    
+  }
+  return inode_permission(ecryptfs_inode_to_lower(inode), mask);
+}
+\end{lstlisting}
+\end{consistifyoff}
+%\paragraph{eCryptfs after changes}
+\begin{figure*}[t]
+\centering
+\begin{minipage}[b]{0.45\textwidth}
+	\includegraphics[width=\linewidth]{figures/ecryptfs_before.eps}
+    \caption{eCryptfs before changes}
+    \label{fig:eCryptfs_before_changes}
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}[b]{0.45\textwidth}
+	\includegraphics[width=\linewidth]{figures/ecryptfs_after.eps}
+    \caption{eCryptfs after changes}
+    \label{fig:eCryptfs_after_changes}
+\end{minipage}
+\end{figure*}
+
+\paragraph{eCryptfs after changes} eCryptfs stores the mount wide
+options in \emph{struct ecryptfs\_mount\_crypt\_stat}, see
+Listing~\ref{mount_crypt_stat}.  That is stored via private field of
+superblock and every encrypted file has this structure written in the
+crypto header.  We have tried to leverage this structure to achieve
+our design goal.
+
+The Figure~\ref{fig:eCryptfs_after_changes} shows the functionality
+with our proposed changes to eCryptfs.
+
+\paragraph{Check UID Module}
+We have added a UID based security enforcement module to eCryptfs
+kernel.  This module is responsible to handle the per-user meta-data
+and access enforcements as well as file access policy management
+activities.  We added a new field in
+\emph{ecryptfs\_mount\_crypt\_stat} structure named as
+\emph{ecryptfs\_allowed\_list}, see Listing~\ref{allowed_list}.  This
+field represents the set of authorized users who have access to files.
+This field is populated at mount time and is configurable via a set of
+IOCTL commands.  First member denotes admin role, for e.g., a\_uid[0],
+a\_gid[0] are designated admin user/group and so on.  Admin roles are
+non-revocable but they can grant/revoke access to other users/groups.
+As of now we are just using \emph{a\_uid} list, but other fields can
+also be used to enforce restriction policies.
+
+\paragraph{eCryptfs Operations for UID checks}
+For every file operation VFS checks for inode permissions, which is
+passed via \emph{ecryptfs\_permission} function.  In
+\emph{ecryptfs\_permission} we have added a check if the request is
+from one of the authorized users, see
+Listing~\ref{ecryptfs_permission}.  If the user is not present in the
+set of authorized users, then return permission denied error.
+
+\paragraph{IOCTL Interface}
+We have added a set of ioctl commands to eCryptfs kernel, which can be
+used by the eCryptfs administrator to perform user policy management.
+Administrative role is assigned to an user with uid \mbox{1234}.  As
+of now admin role is fixed and non-revocable.  At the time of eCryptfs
+mount, admin user is added to the list of allowed users.  Admin user
+can use the ioctl interface to grant/revoke eCryptfs access to an
+user.  Access to eCryptfs ioctl commands is restricted to admin user
+only.  It returns permission denied if the command is raised by a
+non-admin user.
+\begin{itemize}[leftmargin=*]
+\item
+\emph{ecryptfs\_list\_users()} used to get the current allowed users
+for an eCryptfs mount.  This command returns the list of allowed UIDs.
+UID of admin user is not listed for security purposes.\\
+Usage: \emph{ecryptfs\_list\_users mount\_dir}
+\item
+\emph{ecryptfs\_allow\_user()} used to add an user to the set of
+allowed users for an eCryptfs mount.  This command takes an UID and
+tries to add it to the list of allowed users.  If the list already
+have the max number of allowed users, it returns \emph{EUSERS}.  For
+our experiment we have set the size of allowed users list to \emph{3}.
+It does takes care of already existing user in the allowed list to
+avoid duplicates.\\
+Usage: \emph{ecryptfs\_allow\_user mount\_dir UID}
+\item
+\emph{ecryptfs\_revoke\_user()} used to revoke an user's access to an
+eCryptfs mount.  This command takes an UID and tries to remove it from
+the list of allowed users.  If the user exists in the allowed user
+list, it removes the UID from the allowed list, else just return.\\
+Usage: \emph{ecryptfs\_revoke\_user mount\_dir UID}
+\end{itemize}
+
+These IOCTL commands land into eCryptfs kernel, and update the
+structure \emph{ecryptfs\_allowed\_list} from
+\emph{mount\_crypt\_stat} see Listing~\ref{mount_crypt_stat}.  There
+is a possible race condition between ioctl updating
+\emph{ecryptfs\_allowed\_list} and \emph{ecryptfs\_permisssion}
+reading the list to determine file access for a user.  Its not a
+disruptive scenario, in worst case we may transiently allow an
+operation from a revoked user.  We are planning to fix this in future
+using a lock or RCU.  \emph{mount\_crypt\_stats} is not persistent
+across mount/reboot as its container super block itself is not
+persistent.  So we plan to save the structure
+\emph{ecryptfs\_allowed\_list} to a persistent location and read it on
+a remount.  So a flexible user access management scheme can be
+deployed using these IOCTL commands.
+
+
+%\subsection{System Operation}
+%
+%Example of subsection...
+%
+%%-----------------------------------------------------------------------------
+%\paragraph{Garbage collection}
+%%
+%Example of a pragraph heading.
+%
+%\begin{figure}[htbp] \begin{centering}
+%\epsfig{file=figures/lba-ind-example.eps,angle=270,width=1.00\linewidth}
+%\caption{LBA indirection example.  The host first writes LBAs 23,
+%352, 53, 63, 64, 65, 52, and 29.  The second write sequence is 75,
+%76, 23, 52, 324, 263, and 636.  This causes LBAs 23 and 52 to become
+%garbage.  Moreover, reading LBAs sequentially requires reading ABAs
+%randomly.} \label{fig:lba-ind} \end{centering} \end{figure}
+%
+%
+%Here's how you refer to Figure~\ref{fig:lba-ind}.
+%
+%\begin{itemize}
+%
+%\item itemized list item 1
+%
+%\item item 2
+%
+%\end{itemize}
+%
+%
+%\textbf{* TENSE USE: past, present, and future}
+%
+%By default, everything should be written in PAST tense.  "We designed
+%a system and evaluated it."
+%
+%Use present tense ONLY to describe system operation.  "Our system
+%sends a message to the server."
+%
+%Use future tense ONLY in "future work" section!
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Emacs:
+% Local variables:
+% fill-column: 70
+% End:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Vim:
+% vim:textwidth=70
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LocalWords:

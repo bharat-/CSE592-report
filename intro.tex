@@ -1,0 +1,75 @@
+\section{Introduction}
+\label{intro}
+
+eCryptfs~\cite{halcrow2007ecryptfs} is a POSIX-compliant
+enterprise-class stacked cryptographic file system for Linux.  It is
+derived from Erez Zadok's Cryptfs~\cite{zadok:cryptfs}, implemented
+through the FiST framework for generating stacked file systems.
+eCryptfs is a native Linux file system.  It builds as a stand-alone
+kernel module for the Linux kernel; there is no need to apply any
+kernel patches.  It is available in the mainline Linux Kernel as of
+2.6.19.  eCryptfs is widely used, as the basis for Ubuntu's Encrypted
+Home Directory, natively within Google's ChromeOS, and transparently
+embedded in several network attached storage (NAS) devices.
+
+eCryptfs stores cryptographic meta data in the header of each file, so
+that encrypted files can be copied between hosts.  The file will be
+decrypted only if a valid key is produced.  There is no need to keep
+track of any additional information aside from what is already in the
+encrypted file itself.
+
+eCryptfs simply requires that a File Encryption Key (FEK) be
+associated with any given inode in order to decrypt the contents of
+the file on disk.  This prevents an attacker from accessing the file
+contents outside the context of the trusted host environment.  For
+instance, storage media is lost or stolen.  This is the only type of
+unauthorized access that eCryptfs is intended to prevent.
+
+But in a multiuser environment, once a user have access to the
+encrypted data, there is no prevention from another user accessing the
+data even if that user does not have valid key.  To tackle this
+problem there are many access control mechanisms, but it is very
+difficult to deny access to a root user via access control mechanisms.
+Thus all the users with sudo permission can also access the data that
+a user does not want to share.  eCryptfs offers no additional access
+control functions other than what is already implemented via standard
+POSIX file permissions, access control mechanisms (capabilities, SE
+Linux) and so forth.
+
+We have introduced a policy based authentication mechanism inside
+eCryptfs.  It is an additional check to prevent unauthorized users
+inside a trusted host environment from accessing the encrypted data,
+even root user is not allowed.  Based on our experimental results we
+see that this mechanism does not add much overhead in the current
+performance of eCryptfs.
+
+%Typical length: 1-1.5 pages.
+
+%Intro text with a citation~\cite{cryptfs}.
+
+%one-page summary of entire paper: - same 4 steps as abstract, but 1
+%pgf each, instead of 1 sentence.  - intro very important: most
+%reviewers make up their mind early on.
+%
+%When to write intro: - last: to ensure it properly summarizes entire
+%paper.  - first: useful as an outline for rest of work
+%
+%Often best to write an outline of whole paper/ideas.
+
+The rest of this document is organized as follows.  Section 2
+describes the background and current limitations of eCryptfs.  Section
+3 describes our proposed design.  Section 4 describes evaluation plan
+and results.  Section 5 describes related work.  Section 6 describes
+how the solution can be extended for different other methods,
+conclusion and future work.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Emacs:
+% Local variables:
+% fill-column: 70
+% End:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Vim:
+% vim:textwidth=70
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LocalWords:

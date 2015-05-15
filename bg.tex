@@ -1,0 +1,67 @@
+\section{Background}
+\label{bg}
+
+%Background...
+%
+%Typical length: 0 pages to 1.0.
+%
+%Background and Related Work can be similar.  Most citations will be
+%in this section.
+%
+%1. Describe past work and criticize it, fairly.  Use citations to
+%JUSTIFY your criticism!  Problem: hard to compare to YOUR work, b/c
+%you've not yet described your work in enough detail.  Solution: move
+%this text to Related Work at end of paper.
+%
+%2. Describe in some detail, background material necessary to
+%understand the rest of the paper.  Doesn't happen often, esp. if
+%you've covered it in Intro.
+%
+%Example, submit a paper to a storage conference: reviewers are
+%experts in storage.  Don't need to tell them about basic disk
+%operation.  But if your paper, say, is an improvement over an
+%already-advanced data structure (eg., COLA), then it'd make sense to
+%describe basic COLA algorithms in some detail.
+%
+%Important: open the bg section with some "intro" text to tell reader
+%what to expect (so experienced readers can skip it).
+%
+%If your bg material is too short, can fold it into opening of
+%'design' section.
+
+eCryptfs protects data confidentiality even when an unauthorized agent
+gains access to the host machine.  A secret paraphrase is used to
+control access to the file contents.  Properties like file name, size
+and other associated meta-data are left unencrypted.  Crypto
+information for each file is stored as crypt header following the
+rfc2240~\cite{rfc2240} format  along with eCryptfs marker in the file
+itself, so files are portable in the event of a system or disk
+failure.  Even host and persistent storage is not trusted here.
+
+\paragraph{Current Limitations}
+\begin{itemize}
+\item Any user can decrypt the file, if a valid key is produced.  Once
+	the file is decrypted, anyone on that host can read or write
+	based on Unix permissions.  Such behavior is not suitable for
+	a multi-user or file sharing environment.
+\item Anyone with file permissions can delete the file.  Even if the
+	file is encrypted any user with Unix permissions can modify
+	the file, it may corrupt the crypto headers, hence the file
+	cannot be decrypted.
+\item Access revocation does not work without unmounting the eCryptfs
+	file system, making it a disruptive operation.
+\item There is no support for key expiry in eCryptfs.  eCryptfs can
+	leverage the key expiration feature of Linux
+	kernel~\cite{keyexpire}.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Emacs:
+% Local variables:
+% fill-column: 70
+% End:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Vim:
+% vim:textwidth=70
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LocalWords:

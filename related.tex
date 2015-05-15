@@ -1,0 +1,70 @@
+\section{Related Work}
+\label{related}
+
+%Related work section...
+%
+%Typical length: 0.5-2.0 papers, avg 1.0 (assuming a 12-14
+%conf. paper).
+%
+%Background and Related Work can be similar.
+%Most citations will be in this section.
+%
+%Describe past work and criticize it, fairly.  Use citations to
+%JUSTIFY your criticism! Now you can fairly compare to YOUR work.
+%
+%Problem: don't put background/motivation material here (too
+%late).
+%
+%Important: when it doubt, cite it! (to avoid not citing a
+%reviewer's own papers, or papers they know or "think" are
+%related).
+%
+%If conf. allows unlimited citations, do so.
+%
+%Organize past work: should it be importance order?
+%chronological? categorical?
+
+File based encryption are popular and have been deployed widely.  Matt
+Blaze designed Cryptographic File System (CFS) pushes encryption
+services into the file system itself~\cite{cfs}.  CFS supports secure
+storage at the system level through a standard Unix file system
+interface to encrypted files.  Users associate a cryptographic key
+with the directories they wish to protect.  Files in these directories
+(as well as their pathname components) are transparently encrypted and
+decrypted with the specified key without further user intervention;
+plain text is never stored on a disk or sent to a remote file server.
+CFS can use any available file system for its underlying storage
+without modification, including remote file servers such as NFS.
+System management functions, such as file backup, work in a normal
+manner and without knowledge of the key.
+
+EncFS is a user-space stackable cryptographic file-system similar to
+eCryptfs, and aims to secure data with the minimum
+hassle~\cite{encfs}.  It uses FUSE to mount an encrypted directory
+onto another directory specified by the user.  It does not use a
+loopback system like some other comparable systems such as TrueCrypt
+and dm-crypt.
+
+Existing cryptographic file systems for Unix do not take into account
+that sensitive data must often be shared with other users, but still
+kept secret.  By design, the only one who has access to the secret
+data is the person who encrypted it and therefore knows the encryption
+key or password.  This paper presents a kernel driver for a new
+encrypted file system, called Fairly Secure File System (FSFS), which
+provides mechanisms for user management and access control for
+encrypted files~\cite{fsfs}.  The driver has been specifically
+designed with multi user systems in mind.  FSFS also tries to prevent
+unintentional transfer of sensitive data to unencrypted file systems,
+where it would be stored in plain text.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Emacs:
+% Local variables:
+% fill-column: 70
+% End:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Vim:
+% vim:textwidth=70
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LocalWords:  SMR HDDs drive's SMRs
