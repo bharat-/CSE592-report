@@ -109,16 +109,12 @@ sufficient, as they test for the functionality and regression of the file
 system.
 
 \paragraph{Experimental Setup}
-We have used a virtual machine with two Intel\textregistered
-Xeon\texttrademark dual-core 2.40GHz CPUs, and 8GB RAM.  The machine
-ran \mbox{Ubuntu} 14.04.1 with a vanilla 3.19.5 Linux Kernel.  We
-chose \mbox{Ubuntu} because it is freely available and the package
-eCryptfs-utils is installed by default.  For our experiments, we have
-4 users $u_1$, $u_2$, $u_3$ and a root user.  Only user $u_1$ is
-authorized to access encrypted files.  User $u_2$ is placed in sudoer
-list, $u_3$ is a normal user.  All users have intention to access the
-encrypted data, so we have 3 type of attackers and one authorized
-user.
+We have used our Facebook ego network data for our experiments.
+We have excluded the ego from our calculations as the all nodes are
+connected to ego, resulting the shortest path distance between any
+two nodes at max two.  We find the nodes that score high on closeness
+centrality also scores high on betweenness centrality and eigenvector
+centrality.
 
 
 \begin{figure}[t]
