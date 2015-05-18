@@ -1,4 +1,4 @@
-function [adj_mat, n, m] = AdjMatrix(ego_net_file)
+function [adj_mat, n, m] = get_adj_closeness(ego_net_file)
 %ADJMATRIX returns the adjacency matrix for the ego network defined in
 %file ego_net_file. This adjacency matrix doesn't include.  To be
 %consistent, the raw data should be done in the following format.  The
@@ -13,7 +13,9 @@ num_nodes = str2num(rline);
 rline = fgetl(fid);
 num_edges = str2num(rline);
 
-adj_mat = zeros(num_nodes-1);
+%adj_mat = zeros(num_nodes-1);
+adj_mat = sparse(num_nodes, num_nodes);
+
 edges = 1;
 while (edges <= num_edges)
     rline = fgetl(fid);

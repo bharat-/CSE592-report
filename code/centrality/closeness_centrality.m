@@ -3,21 +3,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Load ego network from file
-data, n, m = get_adj_closeness('ego_nw_srikant.txt')
+[data, n, m] = get_adj_closeness('../../ego-dataset/ego_nw_bharat.txt')
 
-A = sparse(n, n);
+%A = sparse(n, n);
+A = data;
 
 % Populate the adjacenty matrix from loaded data
-for i = 1:m
-    row=data(i,1);
-    col=data(i,2);
-    if row == 1 || col == 1
-        continue;
-    end
-    A(row-1,col-1)=1;
-    A(col-1,row-1)=1;
-end
-
+%for i = 1:m
+%    row=data(i,1);
+%    col=data(i,2);
+%    if row == 1 || col == 1
+%        continue;
+%    end
+%    A(row-1,col-1)=1;
+%    A(col-1,row-1)=1;
+%end
+%
 % All pair shortest path
 dist = graphallshortestpaths(A);
 
@@ -53,7 +54,7 @@ end
 % get the nodes with highest closeness values
 closenessCentrality = sortrows(close, -2);
 
-dlmwrite('result_closeness_srikant.txt', closenessCentrality, 'delimiter','\t');
+dlmwrite('result_closeness_bharat.txt', closenessCentrality, 'delimiter','\t');
 
 
 
