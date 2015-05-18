@@ -61,36 +61,6 @@
 %7.  Optional: if eval section longer than usual, end it with a
 %one-paragraph summary of eval results.
 
-\begin{table*}[th]
-\small
-\centering
-\begin{tabular}{ c|c|c|c|c|c|c|c|c| }
-\hline
-\multicolumn{1}{|c|}{\textbf{Algorithm}} &
-\multicolumn{2}{c}{\textbf{Aaswad}}&
-  \multicolumn{2}{|c|}{\textbf{Arvind}} &
-  \multicolumn{2}{|c|}{\textbf{Srikant}} &
-  \multicolumn{2}{|c|}{\textbf{Bharat}} \\
-  \cline{2-9}
-  \multicolumn{1}{|c|}{} &
-  Correct & In-correct & Correct & In-correct & Correct & In-correct & Correct & In-correct \\  \hline
-    \hline
-  \multicolumn{1}{|c|}{\textbf{K-means}}
-& 50.0 & 50.0 & 67.41 & 32.58 & 55.68 & 44.31 & 66.29 & 33.70 \\ \hline
-  \multicolumn{1}{|c|}{\textbf{Eigen-vector}}
-& 86.66 & 13.33 & 90.0 & 10.0 & 86.66 & 13.33 & 83.33 & 16.66 \\ \hline
-  \multicolumn{1}{|c|}{\textbf{Betweenness}}
-& 73.33 & 26.66 & 70.0 & 30.0 & 66.66 & 33.33 & 76.66 & 23.33\\  \hline
-  \multicolumn{1}{|c|}{\textbf{Closeness}}
-& 76.66 & 23.33 & 86.66 & 13.33 & 76.66 & 23.33 & 73.33 & 26.66 \\ \hline
-\end{tabular}
-
-\caption{\capfont Accuracy (in \%) of prediction vs validated data from users}
-\label{tab:Accuracy of Algorithms}
-\end{table*}
-
-
-
 \begin{figure*}[ht]
     \centering
     \includegraphics[width=1\textwidth]{figures/social-result_arvind.eps}
@@ -180,9 +150,27 @@ distance between two nodes after excluding the ego from the graph as a
 distance metric.  After clustering the graph, we report centroid of
 each group as important nodes.  Table~\ref{tab:k-means-results} shows
 the important nodes that were reported for k=5 and their rank
-according to different centrality measures.  For had varied the number
-of clusters for $k=3,5,7,10,12,15,17,20$ and compared the reported
-nodes with the ground truth data.
+according to different centrality measures.   We have varied the
+number of clusters for $k=3,5,7,10,12,15,17,20$ and compared the
+reported nodes with the ground truth data in
+Figure~\ref{fig:social-result-arvind-kmeans}.  We observed that kmeans
+works best for k=15 and worst for k=3.  A size 3 ego-network is not
+very practical scenario, so its results are not accurate.  Accuracy of
+kmeans is more than \emph{60\%} for all other cases.
+
+\paragraph{Comparison of accuracy}
+To verify the the experimental results with the ground truth data, we
+send the top 30 nodes to the users to verify how many of them are
+actually important.  Then based on their response we find the accuracy
+of the algorithm in terms of \% match.  In
+Figure~\ref{fig:social-result-arvind} we compared the results from ego
+network of \emph{Arvind} with the ground truth data.  In this we have
+taken mean accuracy of k-means along with accuracy of others. It shows
+that closeness and eigen-vector give similar results.  We have also
+compared the verified ground truth data for all the users in
+Table~\ref{tab:accuracy-of-algorithms}.  We observe that eigen-vector
+centrality gives the most accurate results and it is consistent across
+all ego networks.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% For Emacs:

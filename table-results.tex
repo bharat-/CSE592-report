@@ -21,6 +21,36 @@ algorithm for k=5 and their rank for different centrality measures.}
 \label{tab:k-means-results}
 \end{table}
 
+
+\begin{table*}[th]
+\small
+\centering
+\begin{tabular}{ c|c|c|c|c|c|c|c|c| }
+\hline
+\multicolumn{1}{|c|}{\textbf{Algorithm}} &
+\multicolumn{2}{c}{\textbf{Aaswad}}&
+  \multicolumn{2}{|c|}{\textbf{Arvind}} &
+  \multicolumn{2}{|c|}{\textbf{Srikant}} &
+  \multicolumn{2}{|c|}{\textbf{Bharat}} \\
+  \cline{2-9}
+  \multicolumn{1}{|c|}{} &
+  Correct & In-correct & Correct & In-correct & Correct & In-correct & Correct & In-correct \\  \hline
+    \hline
+  \multicolumn{1}{|c|}{\textbf{K-means}}
+& 50.0 & 50.0 & 67.41 & 32.58 & 55.68 & 44.31 & 66.29 & 33.70 \\ \hline
+  \multicolumn{1}{|c|}{\textbf{Eigen-vector}}
+& 86.66 & 13.33 & 90.0 & 10.0 & 86.66 & 13.33 & 83.33 & 16.66 \\ \hline
+  \multicolumn{1}{|c|}{\textbf{Betweenness}}
+& 73.33 & 26.66 & 70.0 & 30.0 & 66.66 & 33.33 & 76.66 & 23.33\\  \hline
+  \multicolumn{1}{|c|}{\textbf{Closeness}}
+& 76.66 & 23.33 & 86.66 & 13.33 & 76.66 & 23.33 & 73.33 & 26.66 \\ \hline
+\end{tabular}
+
+\caption{\capfont Accuracy (in \%) of prediction vs validated data from users}
+\label{tab:accuracy-of-algorithms}
+\end{table*}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% For Emacs:
 % Local variables:
