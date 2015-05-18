@@ -60,160 +60,84 @@
 %
 %7.  Optional: if eval section longer than usual, end it with a
 %one-paragraph summary of eval results.
-\input{table-results}
-\input{table-results-xfs}
-
-\paragraph{Evaluation Goals}
-We aimed to provide a correct working solution for eCryptfs with minimal
-performance overheads.
-
-\begin{itemize}
-\item
-\textbf{Correctness}\\
-Only the users that are allowed to access, should be able to access
-the file contents.  Other users should get a permission denied error
-irrespective of their privilege level.
-
-The user who is assigned the administrative role should be able to add
-or revoke permissions to other users in the system.
-
-Users without administrative privilege should not be able to change
-file access policy or gain illegal access.
-\item
-\textbf{Performance}\\ Performance of underlying file system should
-not suffer a penalty due to this extra security enforcement in
-eCryptfs.
-
-We keep the policy management separate from data path, so there is no
-overhead from management tasks on system performance.
-\item
-\textbf{Regression testing}\\ This change should not break any
-existing functionality in eCryptfs as well as the underlying file
-system.
-
-We have tested our changes with basic file operations like create
-file, directory, symlink, delete, rename, untar, kernel compilation.
-We also have run more comprehensive tests such as
-\emph{XFSTESTS}~\cite{xfstests} and eCryptfs-utils test scripts.
-\end{itemize}
-
-\paragraph{Evaluation Plan}
-We have run a set of testing tools along with our manually written
-tests.  The tools are \emph{XFSTESTS} and test scripts provided in
-eCriptfs-utils.  We have run these tools on both modified and
-unmodified eCryptfs kernel for different users with different
-privilege level.  We have tried to run the maximum number of tests
-from these tools, in case of a test failure we rerun it in isolation and
-identify the root cause of failure.  Test cases from these tools are
-sufficient, as they test for the functionality and regression of the file
-system.
-
-\paragraph{Experimental Setup}
-We have used our Facebook ego network data for our experiments.
-We have excluded the ego from our calculations as the all nodes are
-connected to ego, resulting the shortest path distance between any
-two nodes at max two.  We find the nodes that score high on closeness
-centrality also scores high on betweenness centrality and eigenvector
-centrality.
-
-
-\begin{figure}[t]
+\begin{figure*}[ht]
     \centering
-    \includegraphics[width=0.5\textwidth]{figures/perf-results.eps}
-    \caption{eCryptfs performance comparison with and without our
-    changes for make, tar, untar operations.}
-    \label{fig:perf-results}
-\end{figure}
+    \includegraphics[width=1\textwidth]{figures/social-result_eigen.eps}
+    \caption{Rank comparison for top 20 nodes ranked on eigenvector centrality with other centrality scores.}
+    \label{fig:social-result-eigen}
+\end{figure*}
 
+\begin{figure*}[ht]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/social-result_closeness.eps}
+    \caption{Rank comparison for top 20 nodes ranked on closeness centrality with other centrality scores.}
+    \label{fig:social-result-closeness}
+\end{figure*}
+
+\begin{figure*}[ht]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/social-result_betweenness.eps}
+    \caption{Rank comparison for top 20 nodes ranked on betweenness centrality with other centrality scores.}
+    \label{fig:social-result-betweenness}
+\end{figure*}
+
+\paragraph{Data Collection}
+For our experiments, we have collected Facebook ego network data for
+the authors using facebook app "Give me my data"~\cite{givememydata}.
+We also called for volunteers to give their data and verify the
+results as they know the ground truth data.  For our experiment we
+have assigned ids to each user in the data for privacy reasons. 
 
 \paragraph{Results}
-We ran basic file system operation for all four users mentioned above
-on the setup described.  We made changes to Linux Kernel 3.19.5.
-Table~\ref{tab:results} describes the results for all the file systems
-operations we ran.  Column 1 describes the file system operation.
-Column 2,3,4 shows results for users $u_1$, $u_2$, $u_3$ and root user
-respectively with and without our changes in Linux kernel.  \textbf{Y}
-indicates that the  operation ran successfully.  \textbf{N} indicates
-that the user was denied to run the corresponding commands inside the
-eCryptfs mount point.  We also ran some performance tests, such as
-make a Linux Kernel, tar/untar the source tree of Linux Kernel.
-Figure~\ref{fig:perf-results} shows that there is no significant
-performance overhead due to our changes.  The overhead for make workload
-is \emph{1.17\%} and for tar/untar is \emph{1.66\%}.
+We picked assigned each nodes a rank based on the centrality score.
+The nodes with higher importance score were ranked accordingly, 1
+being the highest rank and $n$ being the lowest rank.  The ego in the
+network always gets rank 1.  We then picked top 20 ranked nodes
+according to each centrality score, and then compared how much rank
+increment or decrement each nodes got in other measures of centrality
+scores.
 
-We ran \emph{XFSTESTS} test-suite on Linux-3.19.5 vanilla kernel for
-\emph{eCryptfs} file system.  We used \emph{FSL} git repository of
-\emph{XFSTESTS} for our tests.  We modified the test-suite to support
-\emph{eCryptfs} file system.  These tests can be categorized in two
-categories, 1, without changes and 2, with changes in eCryptfs kernel
-code.  For category 1 we ran the test-suite for root user and a
-non-root user.  For category 2 we ran the test-suite for an allowed
-non-root user, and root user.  Then we added the root user to allowed
-users list and ran the test-suite again.  We compared the test results
-for both categories for each corresponding user.  We find there is no
-difference in the results.  We see that for category 2, when root user
-was not allowed to access eCryptfs file system, all tests failed.
+Figure~\ref{fig:social-result-eigen} shows the rank gain or lose for
+top 20 nodes for eigenvector centrality scores when compared to other
+centrality measures.  Here we can see that node 222, has the same rank
+for all the three measures.  So, it shows that a node if it is really
+important, remains important irrespective of centrality indicator.  We
+can also see that there is not much gain or lose in rank when compared
+to closeness centrality.  Node 109 gains a better rank when measured
+on different centrality indicators.  But for all other nodes there is
+significant drop in rank, when compared to betweenness centrality.
 
-We also found new interesting bugs with eCryptfs file system.
-\begin{itemize}
-\item 
-\textbf{noatime mount option:} If the eCryptfs file system is mounted
-with noatime mount option, the access times for any file should never
-change.  But we see that there is no difference between if file system
-is mounted with noatime option or not.  The access time for files
-changes in both the cases.
+Figure~\ref{fig:social-result-closeness} shows the rank gain or lose for
+top 20 nodes for closeness centrality scores when compared to other
+centrality measures.  Here we can see that there is significant
+overlap in top 20 nodes for closeness centrality and eigenvector
+centrality.  Almost 15 nodes out of 20 are common for both the scales.
+But when compared to betweenness centrality there is not much overlap.
+But still the maximum drop to rank is not more than 45, that is less
+than 10\% of the total nodes, 508.  This tells
+that nodes that are important according to eigenvector centrality or
+closeness centrality measures are really important nodes.  But when we
+see the top 20 important nodes for betweenness centrality, see
+figure~\ref{fig:social-result-betweenness}, nodes that rank high on
+this score, are not among the high ranked nodes on the other
+centrality indicators.  Betweenness centrality finds completely
+different important nodes.  Some of these nodes are relatively less
+important nodes in context of whole network, but these nodes work as a
+bridge between two communities in the graph.  That is why these nodes
+score high on betweenness centrality but low on other centrality
+measures.
 
-\item
-\textbf{Direct IO:} eCryptfs does not support direct IO.  So all the
-tests for direct IO failed.
-\item
-\textbf{File access timestamp Epoch:} Create a file in eCryptfs
-directory with creation time before epoch.  Check the time of last
-access as seconds since Epoch, it should be a negative value.  Now
-flush the cache by remounting the file system.  Now if we check again
-for the time of last access as seconds since Epoch, it should still be
-negative, but that is not the case here.
-\end{itemize}
+\input{table-results.tex}
 
-All the \emph{XFSTESTS} that failed can be assigned to the issues
-mentioned above.
-
-We also ran the default eCryptfs-test script found in eCryptfs utils.
-These tests include various file systems tests, such as file read,
-write, concurrent access, inode races, symlinks, file truncate.  These
-tests also include tests for already identified bugs in eCryptfs.
-These tests ensures that we did not break anything that was working
-before our changes.  For both the categories, we did not find any
-difference in the results for all the tests.  As expected for any
-non-allowed user all the tests in the script failed.
-
-Table~\ref{tab:results-xfs} shows the number of tests that passed from
-total number of tests for both the test-suites for various users.  We
-examined the failed tests and identified why some of \emph{XFSTESTS}
-failed.  The numbers show that there was nothing broken due to our
-changes.  Since many tests requires root permissions as these are
-kernel level tests, the amount of tests that failed for non-root user
-were considerably higher than that of root user.
-
-IOCTL interface is restricted to admin user.  For our experiments we
-hard coded a UID \mbox{1234} as admin user in eCryptfs kernel.  We
-created a user with UID \mbox{1234} using adduser(1) utility.  At
-mount time only admin user is added to the list of allowed users.
-Root can mount the file system but cannot access the files within the
-mount point, as it is not part of allowed list.  At this point only
-admin user can perform file operation and user management activity.
-Once the admin added a user to the set of allowed users, that user can
-perform file operation.  Still user management operations like
-list\_users/allow\_user/revoke\_user is restricted to admin user.
-
-We tested IOCTL interface via multiple users like admin, user1, user2,
-root.  We observed that only admin user was able to successfully run
-the IOCTL commands, other users including root got permission denied
-error.  Since admin role is non-revocable, even the admin user cannot
-revoke itself.  Admin user cannot add any users to the allowed list
-once the list was full, too many users error is returned.  We verified
-that the file operation path was being properly affected by the
-changes done via IOCTL interface.
+We also had run k-means clustering algorithm on the ego network for
+different k values.  For k-means clustering we have used shortest path
+distance between two nodes after excluding the ego from the graph as a
+distance metric.  After clustering the graph, we report centroid of
+each group as important nodes.  Table~\ref{tab:k-means-results} shows
+the important nodes that were reported for k=5 and their rank
+according to different centrality measures.  For had varied the number
+of clusters for $k=3,5,7,10,12,15,17,20$ and compared the reported
+nodes with the ground truth data.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% For Emacs:

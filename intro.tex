@@ -1,40 +1,94 @@
 \section{Introduction}
 \label{intro}
 
-Identify different social foci in one’s friend circle, i.e., the group
-of friends of a particular individual. This is similar to community
-detection but not entirely the same as community detection. Identifying
-social foci is similar to identifying important nodes.
+An individual's ego network consists of nodes that have direct edge
+with the ego, and edges among each other.  There can be different
+nodes who are important in spreading of information in different
+communities found in the ego network.  And also there are nodes, that
+are less important in the network.  Identifying different important
+nodes in one’s friend circle, i.e., the group of friends of a
+particular individual is similar to community detection but not
+entirely the same as community detection.
 
-We have used various methods to measure the importance of a node
-such as betweenness centrality, closeness centrality and eigenvector
-centrality.  We also used k-means clustering to divide the graph into
-different clusters and then report centroid of each cluster as foci
-for respective cluster.
-
-Our results show that accuracy of betweenness, closeness and eigenvector
-centrality results are around \emph{80\%} correct. k-means clustering
-results vary with parameters like method of centroid calculation.
-
-%Typical length: 1-1.5 pages.
-
-%Intro text with a citation~\cite{cryptfs}.
-
-%one-page summary of entire paper: - same 4 steps as abstract, but 1
-%pgf each, instead of 1 sentence.  - intro very important: most
-%reviewers make up their mind early on.
-%
-%When to write intro: - last: to ensure it properly summarizes entire
-%paper.  - first: useful as an outline for rest of work
-%
-%Often best to write an outline of whole paper/ideas.
+There are different methods that indicate the importance of a vertex
+in a network graph.  In graph theory, indicators of centrality
+identify the most important vertices within a graph.  Different
+measures of centrality differ how they classify the importance of a
+node.  Based on different definitions of importance, there are several
+indicators of centrality.
+\begin{itemize}
+\item
+\textbf{Eigenvector Centrality}
+A node is important if it is connected to many other important nodes.
+The importance of the node is affected by its neighbours.  If we
+denote the centrality of vertex $v_i$ by $x_i$, then $$x_{i} =
+\frac{1}{\lambda} \sum\limits_{j=1}^n A_{ij}x{j}$$ where $\lambda$ is
+a constant, $A$ is the adjacency matrix, $n$ is the number of vertices
+in the graph.  Defining the vector of centralities $x = (x_1, x_2,
+\cdots)$, we can rewrite this equation in matrix form as $$\lambda x =
+A·x$$ and hence we see that $x$ is an eigenvector of the adjacency
+matrix with eigenvalue $\lambda$.  Assuming that we wish the
+centralities to be non-negative, it can be shown (using the
+Perron–Frobenius theorem) that $\lambda$ must be the largest
+eigenvalue of the adjacency matrix and $x$ the corresponding
+eigenvector~\cite{newman2008mathematics}.
+\item
+\textbf{Betweenness centrality}
+A node is plays important role in spreading any information if there
+are multiple paths passing through it.  It denotes how many pairs of
+nodes would have to pass through it in order to reach from one to
+anther in minimum number of hops~\cite{freeman1977set}.  The
+betweenness of a vertex $v_i$ in a graph $G:=(V,E)$ is sum of the
+fraction of number of shortest path between any pair of vertices
+$(s,t)$ that pass through the vertex $v_i$ to total number of shortest
+paths between $(s,t)$ for all pairs of
+vertices~\cite{brandes2001faster}.
+$$C_B(v)= \sum_{s \neq v \neq t \in
+V}\frac{\sigma_{st}(v)}{\sigma_{st}}$$
+where $\sigma_{st}$ is total number of shortest paths from node $s$ to
+$t$ and $\sigma_{st}(v_i)$ is the number of those paths that pass
+through $v_i$.
+\item
+\textbf{Closeness centrality}
+If a node is close to all other nodes, then the nodes will be a
+central node for the graph.  Such node can also be important node
+since it is in the center of the graph.  The closeness centrality for
+node $v_i$ is defined as the reciprocal of the sum of its distances
+from all other
+nodes~\cite{bavelas1950communication}~\cite{sabidussi1966centrality}.
+$$C(v_i)= \frac{1}{\sum_{v_j} d(v_j,v_i)}$$
+where $d(v_j,v_i)$ is the shortest path distance in terms of number of
+hops between $v_i$ and $v_j$.\\
+In our case the maximum distance can be 2 as every node is connected
+to ego.  So to remove this limitation we have removed the ego from the
+network leaving several different connected networks.  As not all the
+nodes are connected now, the distance between two nodes can be
+infinity.  In that case the formula described above can not be used.
+So for our purpose we have used a modified formula given by Gill and
+Schmidt~\cite{gilandschmidt1996}.
+$$C(v_i)= \sum_{v_j}\frac{1}{d(v_j,v_i)}$$
+This formula takes into account that the two nodes can be disconnected
+hence they will contribute a value of zero in the centrality score.
+\item
+\textbf{K-means Clustering}
+All the above mentioned centrality scores gives the important nodes
+for a whole ego network.  But there are some nodes who are important
+nodes for a particular community or group.  Such nodes should also be
+considered important as they are important nodes in their respective
+community.  For such node, we first divide the ego network in
+different communities using k-means clustering algorithm with user
+defined distance algorithm.  Then we report the centroid of each
+cluster as important node.  For distance function we use shortest path
+distance between two nodes after removing ego from the network.  The
+removal of ego from network can leave some nodes as isolated node
+since they were connected only to ego.  We consider such nodes part of
+no community and never report them as important nodes.
+\end{itemize}
 
 The rest of this document is organized as follows.  Section 2
-describes the background and motivation.  Section
-3 describes our proposed approach.  Section 4 describes evaluation plan
-and results.  Section 5 describes related work.  Section 6 describes
-how the approach can be extended for other methods,
-conclusion and future work.
+describes experimental setup and results.  Section 3 describes
+conclusion and future work.  Section 4 acknowledges the contributors
+who were helpful in this project.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% For Emacs:
