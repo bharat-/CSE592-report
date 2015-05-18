@@ -1,0 +1,120 @@
+=======================
+=======================
+k = 3
+Anshul Kumar Tamta
+Shirisha Kandalai
+Vivek Kulkarni
+
+=======================
+=======================
+k = 5
+Vamiq Mohammed Mustahsan
+Sohil Gandhi
+Mayank Lodha
+Vineet Hassija
+सौरभ गुप्ता
+
+=======================
+=======================
+k = 7
+Parul Goyal
+Michan Mohajeri
+Sandeep Saharawat
+Vikas Goyal
+Ekansh Kumar
+Sohil Gandhi
+आलोक श्रीवास्तव
+
+=======================
+=======================
+k = 10
+Amit Singh Kashyap
+Ravi Kiran Tummala
+Sohil Gandhi
+Rahul Duggal
+Aditya Vikram Jain
+Shirisha Kandalai
+Yash Datta
+Atish Roy
+Mukul Gupta 1
+सौरभ गुप्ता
+
+=======================
+=======================
+k = 12
+Astro Lakshay
+Sanket Pandey
+Rajat Talwar
+Himanshu Arya
+Ashutosh Gupta
+Amit Arora
+Sombir Ahlawat
+Ankur Malhotra
+Tusshar Singh
+Vishal Salgotra
+Shirisha Kandalai
+Vivek Kulkarni
+
+=======================
+=======================
+k = 15
+Pragya Gupta
+Ravi Kiran Tummala
+Josh Lear
+Utfull Kaushik
+Himanshu Arya
+Michan Mohajeri
+Sohil Gandhi
+Yash Datta
+Sandeep Saharawat
+Mukul Gupta 1
+Gourav Singhal
+Rishabh Jaiswal
+Sombir Ahlawat
+Aseem Goyal
+सौरभ गुप्ता
+
+=======================
+=======================
+k = 17
+Jai Jaswani
+Nisha Garg
+Sohil Gandhi
+Giripal Rawat
+Ashutosh Gupta
+Himanshu Arya
+Suraj Singh
+Aman Agarwal
+Mukul Gupta 1
+Nikhil Bajaj
+Shailendra Kumar
+Mohd Imran Khan
+Michan Mohajeri
+Rohit Kothari
+Sandeep Saharawat
+Shirisha Kandalai
+Yatharth Bhaskar
+
+=======================
+=======================
+k = 20
+Saurabh Modi
+Ratandeep Singh
+Pankaj Aggarwal
+Michan Mohajeri
+Ravi Kiran Tummala
+Mohit Gupta
+Ritwik Das
+Parul Goyal
+Sohil Gandhi
+Rohan Mahajan
+Prarthana Dixit
+Shashank Gupta
+Shirisha Kandalai
+Sahil Mittal
+Subodh Pandey
+Tusshar Singh
+Ekansh Kumar
+Anoob Anto
+Anjali Aggarwal
+आलोक श्रीवास्तव

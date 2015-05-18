@@ -1,0 +1,120 @@
+=======================
+=======================
+k = 3
+Praveen Srinivas B
+Gautham Reddy
+Rushi Agrawal
+
+=======================
+=======================
+k = 5
+Rushi Agrawal
+Jitendra Rewar
+Manjesh Choudhary
+Naresh Choudhary
+Honshu Priyadarshi
+
+=======================
+=======================
+k = 7
+Umesh Kumar
+Subhash Choudhary
+Vasanth Reddy Tumati
+Ashish Chaudhary
+Vishal Agrawal
+Rushi Agrawal
+Mahesh Madhopur
+
+=======================
+=======================
+k = 10
+Sanjay Jat
+Naresh Choudhary
+Rahul Agarwal
+Sohil Gandhi
+Pooran Saini
+Naaraayanan Thangaraj
+Rushi Agrawal
+Parveen Kumawat
+Dharmendra Choudhary
+Manjesh Choudhary
+
+=======================
+=======================
+k = 12
+Pavan Manjunath
+Deepti Banka
+Manoj Tiwari
+Dharmendra Choudhary
+Ajit Parashar
+Karthik Vajapeyajula
+Vikyath Vishnu
+Nishant Singh
+Madhan Mohan
+Darshan Kumar
+Manjesh Choudhary
+Rushi Agrawal
+
+=======================
+=======================
+k = 15
+Aitihasik Bharath
+Gaurav Gupta
+Akash Rastogi
+Pushkar Jajoria
+Tarun Reddy
+Manjesh Choudhary
+Raj Kiran Choudhary
+Hemanth Reddy
+Rushi Agrawal
+Varun Shastry
+Itechzen Innovation-hub
+Sohil Gandhi
+Bhanu Prathap
+Manoj Tiwari
+Nishant Singh
+
+=======================
+=======================
+k = 17
+Preeti Sharma
+Tushar Sandhan
+Varun Simhadri
+Karthik Badam
+Harish Vardhan
+Manjesh Choudhary
+Nishant Singh
+Jitendra Rewar
+Arnav Mohan
+Rehan Ahmed
+Bharat Singh
+Arihant Jain
+Bala Ji
+Nagarjuna Malempati
+Rushi Agrawal
+Subhash Choudhary
+Ashish Chaudhary
+
+=======================
+=======================
+k = 20
+Dheeraj Yadav
+Nagarjuna Malempati
+Ranjith Kumar
+Chirag Choudhary
+Bharat Singh
+Geet Chahar
+Satyanarayana Tadikonda
+Anirban Roy
+Kotapothula Sai Dinesh
+Pruthviraj Chavan
+Mahesh Kumawat
+Aitihasik Bharath
+Naresh Choudhary
+Jitendra Rewar
+Yashwanth Yadavalli
+Ashish Chaudhary
+Rushi Agrawal
+Rajeev Reddy
+Subhash Choudhary
+Hemanth Reddy

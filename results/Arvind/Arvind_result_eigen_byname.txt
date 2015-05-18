@@ -1,0 +1,507 @@
+Hari Shankar 0.14205
+Suresh Babu 0.14144
+Narendra Nalli 0.13273
+Rohit Kalaskar 0.12088
+Tarun Reddy 0.11912
+Bhanu Prathap 0.11313
+Vamsi Krishna 0.11308
+Harsha Sai Nanda 0.11059
+Rajeev Reddy 0.10835
+Sumanth Polimera 0.10447
+Chandra Thej 0.10421
+Duppelly Abhinay 0.099377
+Umesh Kumar 0.097196
+Sreenath Sasidharan 0.096796
+Satish Chandra Nallapaneni 0.096271
+Ravi Pruthvi 0.092627
+Raghu Bandaru 0.09251
+Harsha Jsn 0.091638
+Madhan Mohan 0.091441
+Seshanth Kumar 0.091424
+Deepthi Thadi 0.090081
+Varun Simhadri 0.089457
+Krishna Kalyan Medarametla 0.086474
+Gautham Reddy 0.084654
+Hsnkishore Yadav 0.081442
+K Vamshi Krishna 0.081359
+Shashank Rajamoni 0.081317
+Srinivas Mln 0.080708
+Karthik Badam 0.078636
+Rajesh Pandava 0.076906
+Ravi Teja G 0.076728
+Saketh Goud 0.076486
+Shreyas Vinayakumar 0.075954
+Chandra Sekhar Panathula 0.075238
+Honshu Priyadarshi 0.074381
+O Pradeep Sharma 0.073417
+Vishnu Charan Chimmani 0.071569
+Sudha Datla 0.069946
+Varsha Nihanth 0.069928
+Manoj Kumar Tripathi 0.0681
+Akhilesh Chaganti 0.068038
+Ankit Singh 0.067371
+Nuthan Nuth 0.066257
+Raja Naidu 0.062469
+Avinash Kumar 0.061921
+Akash Kumarapillai 0.06022
+Nagaraja Sudhindra 0.055756
+Manideep Chowdary 0.055736
+Yashwanth Yadavalli 0.055245
+Vivek Boominathan 0.054465
+Kottu Mohana 0.053843
+Nagasudha Buragoni 0.053729
+Sanskar Godha 0.052799
+Gautham Raj 0.052592
+Novneet Nov 0.051472
+Amey Gade 0.050716
+Saransh Agrawal 0.050544
+Raj Kiran Choudhary 0.050382
+Deepak Jsvs 0.049861
+Siddhartha Ayyagari 0.049304
+Shantanu Deshpande 0.049295
+Political India-Movie 0.044209
+Harish Vadugula 0.043498
+Meenakshi Devi Parre 0.043449
+Vijay Bhaskar 0.041347
+Ajit Aluri 0.041344
+Gopinath Raja 0.040951
+Shyama Purnima 0.039658
+Khateeb Noor Ul Huda 0.038818
+Prasanth Chatharasi 0.038136
+Apoorva Mahindra Athavale 0.037847
+Ramlal Nayak 0.036324
+Teza Bhamidi 0.03569
+M V Harish Babu 0.035411
+Anwar Ahmad 0.034679
+Bala Murali Krishna Komanduri 0.034433
+Shiva Chandra Kumar K 0.033491
+Rajat Luthra 0.032796
+Naveen Kumar 0.032767
+Naaraayanan Thangaraj 0.032172
+Yatharth Manuja 0.031855
+Arun Chaitanya 0.031401
+Shyamang Goswami 0.030637
+Srinivas Vadrevu 0.029375
+Srikanth Nomula 0.028989
+Piyush Kumar Naik 0.028644
+Kruthika Banpur 0.027458
+Pratyush Peddireddi 0.025073
+Rehan Ahmed 0.024939
+PraKkhyath Raj 0.024569
+Naveen Kishore R S 0.024566
+Ajay Verma 0.024488
+Nishant Singh 0.021632
+Prasanna Kumar 0.021411
+Sneha Somanath 0.020863
+Kali Kishore Chintha 0.020401
+Arihant Jain 0.020107
+Shelly Kesri 0.019881
+Akshara Proddaturi 0.018249
+C S Arun Chandrasekhar 0.016661
+Amrutha Ks 0.015906
+Vinaya Mudegowdru 0.015314
+Harish Vardhan 0.014879
+Sneha Shankar Narayan 0.014392
+Manasvi Goyal 0.013463
+Rahul Prabhu 0.013115
+Pramod Rangarajan 0.012436
+Mohammad Salimuddin 0.012386
+Neha Banawalikar 0.011873
+Sourav Basu 0.011654
+Upendra Kumar Singh 0.011568
+Harsh Gupta 0.01147
+Kasireddi Yernieswararao 0.0112
+Gaurav Verma 0.010759
+Vipin Vishvkarma 0.010683
+Mrinal Mahato 0.010641
+Avinash Rahul 0.010352
+Soumik Ghosh 0.0095408
+Niket Bagwe 0.0095323
+Ashish Chaudhary 0.0093318
+Sindhuja Pamulapati 0.0093047
+Mukul Sharma 0.008452
+Garima Choudhary 0.0084232
+Ranjith Kumar 0.0080673
+Abhishek Kumar 0.0078207
+Shruthi Aithal 0.0077825
+Anurag Singh 0.0074209
+Manu Kumar 0.0074148
+Chinmay Hegde 0.0070088
+Samarth Kumar 0.0065731
+Sai Manohar Inabattini 0.0065282
+Jitendra Chauhan 0.0059062
+Akash Rastogi 0.0059053
+Roopam Saxena 0.0056818
+Shivanshu Goswami 0.0056587
+Pediredla Venkata Ashok 0.0055709
+Saurabh Nigam 0.005282
+Ritesh Srivastava 0.0051228
+Aashray Arora 0.0050304
+Avinash Repaka 0.0049361
+Sankalp Srivastava 0.0049174
+Deepti Banka 0.0046971
+Saurabh Kumar 0.0042902
+Yateesh Kumar M N 0.0042404
+Ayushi Jain 0.0040228
+Divya Rai 0.00401
+Krishnaprasad Paraatt 0.003816
+Vinitra Ramasubramaniam 0.0037406
+Shweta Mulchandani 0.0037386
+Deepak Gujraniya 0.0035718
+Naveen M Sadashiv 0.0034277
+Paritosh Katyal 0.0033942
+Rahul Gupta 0.003213
+Mounika Vinod 0.003068
+Tushar Sandhan 0.0028385
+Abhinil Dahiwale 0.0028217
+Bhagwan Dass 0.0027756
+ChandraPrakash Gupta 0.0027664
+Asan Babu 0.0027425
+Pandu Rangan Chandrasekaran 0.0027081
+Rajesh Choudhary 0.0022904
+Nida Taranum 0.0022746
+Nagaraju Dovari 0.0022642
+Ashir Madaan 0.0020727
+Harris As Harish 0.001985
+Arnav Mohan 0.0019827
+Bharat Singh 0.0016474
+Sohil Gandhi 0.0016463
+Gaurav Gupta 0.0016417
+Varun Shastry 0.0016379
+Sidhartha Thota 0.0015076
+Gaurav Gawde 0.0015001
+Chinni Krishna 0.0014581
+Rishab Jain 0.001309
+Manoj Tiwari 0.001235
+Tasvinder Singh 0.001059
+Asha Latha 0.00095479
+Paul Mathew 0.00084528
+Ashok Sankar 0.00074937
+Kovid Kapoor 0.00067932
+Raman Madaan 0.0005093
+Ravi Jain 0.00044903
+Shubham Asati 0.00042005
+Prashasti Baid 0.00039074
+Er Rakesh Kumawat 0.00033625
+Praveen Bijarnia 0.00015625
+Amit Sinha -8.6441e-05
+Moolchand Kuri -0.00011063
+Phani Kumar -0.00011123
+Aishwarya Mittal -0.00011747
+Nitish Gupta -0.00013609
+Ankit Batra -0.00015069
+Ayush Sengupta -0.00015828
+Aaswad Satpute -0.00020383
+Navin Agarwal -0.0002193
+Nishant Mittal -0.00025345
+Ankit Gupta -0.00026192
+Srikant Aggarwal -0.00026814
+Ashish Goel -0.00027557
+Kanchan Chandnani -0.00027789
+Bhanwar Singh Meena -0.00030844
+Harish Tenepalli -0.0003444
+Dibakar Datta Gupta -0.00034678
+Animesh Gupta -0.00037655
+Sumit Choudhary -0.0003896
+Varun Kumar Vala -0.00040642
+Ajay Raj Singh Attri -0.00042881
+Pavan Manjunath -0.00044061
+Stony Brook CompSci -0.00046782
+Komal Sanjeev -0.0005064
+Vijay Hemgude -0.00056999
+Roman Pavlushchenko -0.00064076
+Rohitash Bishnoi -0.00064076
+Mahipal Meena -0.00064321
+Karthikeyan Balasubramanian -0.00066791
+Avi Srivastava -0.00068035
+Durgesh Shobhawat -0.00068069
+Pramod Sharma -0.00068189
+Rahul Goyal -0.0006862
+Jeetendra Binjrawat -0.0006862
+Geetika Sharma -0.0006862
+Vijay Kumar -0.0006862
+Muskan Verma -0.0006862
+Praveesh Khandelwal -0.0006862
+Laxmi Verma -0.0006862
+Ankesh Singh Rathore -0.0006862
+CA Pradeep Samota -0.0006862
+Sajan Kedia -0.00068858
+Vishal Parekh -0.0006936
+Kunal Dudawat -0.00070621
+Bhawani Saini -0.00070633
+Arpit Shrimal -0.00070859
+Lövê Kümår Khôdã -0.00070922
+Geet Chahar -0.00071571
+Sambeet Tiady -0.00071695
+Anil Kumar Chahar -0.00071977
+Lakhan Singh Choudhary -0.00072252
+Agnivesh Mangal -0.00072545
+Soniya Gupta -0.00072659
+Prathyusha Kasina -0.00072833
+Ajit Parashar -0.0007368
+Pankaj Kumawat -0.00074042
+Pratibha Kherwa PK -0.00074416
+Ronik Banaa -0.00075909
+Jitendra Choudhary -0.00076261
+Ramkishor Saini -0.00076422
+Vishakha Kherwa -0.00076748
+Ramswaroop Choudhary -0.00076937
+Rahul Agarwal -0.00077367
+Shankarlal Jeetarwal -0.00077583
+Preeti Sharma -0.00078196
+Rakesh Yadav -0.00078665
+Shivani Sain -0.0007895
+Manoj Saini -0.00079301
+Raj Jat -0.00079691
+Vikram Kalwaniya -0.00080982
+Karmkrit Jain -0.00081175
+Vijay Pal -0.00081385
+Sumit Kumar -0.000817
+Renuka Chaudhary -0.00081892
+Saloni Rahul Singh -0.00082748
+Radhakrishna Sharma -0.00083402
+ER Shankar Lal Jeetarwal -0.00083462
+Raj Choudhary -0.00084553
+Manish Sharma -0.00085204
+Shyam Lal Dhakharwal -0.00085897
+Sanwar Mal Choudhary -0.00085897
+Sudeshna Bharti -0.00086509
+Himanshu Sharma -0.00087446
+Ravindra Choudhary -0.00087827
+Abhishek Saroj -0.00089748
+सुरेश बिन्जरावत -0.0009047
+Nitish Marwal -0.00090763
+Tarun Agarwal -0.0009111
+P M Sharma -0.00091124
+Amit Singhal Gopalka -0.00093428
+Ram Singh -0.00095214
+Phoolchand Choudhary -0.00095541
+Rajat Sharma -0.00097902
+Satish Jat -0.00099201
+Rishiraj Kherwa -0.00099225
+Manoj Choudhary -0.00099973
+Jeetendra Kumawat -0.0010007
+Pawan Meena -0.0010056
+Sanjeev Bijarnia -0.001021
+Mukesh Choudhary -0.0010315
+Chetan Verma -0.0010351
+Mukesh Bajiya -0.0010371
+Deshraj Bijarniya -0.0010484
+Ramniwas Singh -0.0010493
+Rajpal Singh -0.0010604
+Ricky Verma -0.0010644
+Mahesh Bijarniya -0.0010662
+Mukesh Poonia -0.0010662
+Sanjiv Meena -0.0010685
+Shekhar Kumawat -0.0010699
+Sunita Kumari Bijarniya -0.0010869
+Sona Kumawat -0.001095
+Pooran Saini -0.0011091
+Drtarachand Bijarnia -0.0011158
+Maneesh Kumar Chaudhary -0.0011268
+Vijay Singh Choudhary -0.0011514
+Vinod Kumar Kumawat -0.0011727
+Durga Prasad Kharra -0.0011929
+Mahendra Swami -0.0011952
+Bharat Nit -0.0012038
+Rajpal Choudhary -0.0012055
+Shekhar Meena -0.001207
+Surendra Singh Bochalya -0.0012109
+Sitaram Jat -0.001214
+Dharmendra Choudhary -0.0012171
+Uttam Verma -0.0012233
+Shankar Jat -0.0012237
+Usha Choudhary -0.0012241
+Ajay Kumar -0.0012522
+Anil Kumawat -0.0012555
+Suresh Kumar Suresh Kumer -0.0012593
+Hemant Sharma -0.0012714
+Pharmacist Ramesh Bijarniya -0.0012845
+Anita Ramesh Bijarniya -0.0012966
+Naveen Kumawat -0.001303
+Vikas Chaudhary -0.0013169
+Ramjilal Kumawat -0.0013484
+Varshika Choudhary -0.001351
+Sardar Singh Devanda -0.0013588
+Anil Jat -0.0014379
+Dheeraj Kumar Singhal -0.0014466
+Pawan Bhagirath -0.0014474
+Mahesh Madhopur -0.0014645
+Rahul Bajiya -0.0014872
+Sunil Choudhary -0.0015258
+Sanjay Jat -0.0015393
+Naresh Choudhary -0.0015532
+Suresh Kumar Choudhary -0.0015733
+Vicky Kumawat -0.0015873
+Rajaram Meena -0.0015993
+Mukesh Rewar -0.001602
+Ujjawal Sain -0.0016351
+Hemkant Bhatra Abvp -0.0016419
+Amit Bijarnia -0.00165
+Vijay Kumar Choudhary -0.0017089
+Dhara Bajiya -0.0017369
+Mahesh Kumawat -0.0017434
+Damodar Dawanda -0.0017649
+Subhash Bajiya -0.0018261
+Sourav Choudhary -0.001838
+Pardeep Kumawat Abvp -0.0018765
+Ram Chandra Nitharwal -0.001877
+Rakesh Choudhary -0.0018799
+Mukesh Kumar -0.0018893
+Parveen Kumawat -0.0019659
+Aryan Choudhary -0.0019925
+Vikash Choudhary -0.0020333
+Manju Choudhary -0.0020484
+Vinod Rewar -0.0020963
+Gaurav Choudhary -0.0021258
+Rohit Bajiya -0.0021445
+Nagandra Bijarnia -0.0024515
+Choudhary Lakhan Singh -0.0025429
+Vinod Kumar Rewar -0.0026245
+Vijaysingh Choudhary -0.0026426
+Sitaram Bijarnia -0.0026677
+Dinesh Choudhary -0.0027492
+Jitendra Rewar -0.0027806
+Sonia Verma -0.0028285
+Avinash Choudhary -0.002853
+Darshan Kumar -0.0028643
+Vasam Nikhil Mahendra -0.0030046
+Manjesh Choudhary -0.0031715
+Manoj Kumar Choudhary -0.0032136
+Rammurthy Mudimadugula -0.003832
+Subhash Choudhary -0.0038432
+Anil Choudhary -0.0039876
+Chitransh Chhalotre -0.0040716
+Nikhil Reddy KV -0.0053689
+Sai Kiran Puli -0.007959
+Namratha Vedire -0.0094007
+Itechzen Innovation-hub -0.010095
+Mohan Manchala -0.010956
+Srinivas Mettu -0.011094
+Rushi Agrawal -0.012177
+Anjali Singh -0.013574
+Venkatesh Bajjuri -0.013846
+Praveen Srinivas B -0.014505
+Prerana Tiwari -0.014707
+Karthik Vajapeyajula -0.014871
+Nagaraj Mahajan -0.014927
+Neehar Mavuduru -0.016082
+Rahul Chauhan -0.017062
+Gattu Vinay -0.017364
+Pratik Lokhande -0.018643
+Elan Iit Hyderabad&#039;s Fest -0.02031
+Sandeep Pnj -0.020727
+Maaz Mohiuddin -0.021079
+Sri Venkata Vivek D -0.021312
+Aitihasik Bharath -0.021435
+Saurabh Singh -0.022031
+Abishek Ramesh -0.023749
+Arvind Chaudhary -0.024879
+Hemanth Reddy -0.025109
+Abram Benny Kakkozha -0.025776
+Chintamaneni Naveen -0.025812
+Satyanarayana Tadikonda -0.026556
+Madhu Mohan Bhukya -0.026898
+Suman Jadav -0.027317
+Mohammad Arafath -0.02766
+Sai Suresh -0.028063
+Rahul Kumar Sinha -0.028623
+Nilanjana Ghosh -0.031738
+Kotapothula Sai Dinesh -0.031901
+Mukesh Chawla -0.032367
+Sharath Sathu -0.032969
+Vasanth Reddy Tumati -0.032976
+Nagarjuna Malempati -0.033174
+Thomas George -0.034131
+Mohit Choudhary -0.034131
+Tushar Roy -0.035277
+Kunal Aggarwal -0.035523
+Abhinav Chintala -0.037298
+Sashank Sharma -0.037321
+Karthik Varada -0.037397
+Gautham Manoharan -0.038248
+Shabaz Patel -0.038643
+Nvision Iit-h -0.038818
+Aditya Vagala -0.041294
+Udaybhan Lodhi -0.04176
+Adithyan Raja -0.041916
+Chirag Choudhary -0.042313
+Pramod Kumar -0.043893
+Ajmal Hussain -0.04423
+Manas Gajula -0.04453
+Murari Sai -0.044977
+Avneesh Sharma -0.045819
+Sachin Kumar -0.046421
+Pruthviraj Chavan -0.046738
+Hari Krishna Kunderu -0.046926
+Syed Khalid Mohammad -0.047738
+Brijesh Kumar -0.047775
+Kotaro Kataoka -0.048876
+Aman Bagade -0.049265
+Vishal Agrawal -0.049863
+Pushkar Jajoria -0.050222
+Monson Prasad -0.051324
+Ajay Mandyam -0.051657
+Vikyath Vishnu -0.051754
+Navneet Joshi -0.052907
+Shyju Wilson -0.053723
+Nitish Kumar -0.054026
+Rajendra Palaparthi -0.054072
+Akshay Betala -0.05426
+Anish Chandra -0.055037
+Manish Talreja -0.056156
+Ankit Mishra -0.056468
+Aswin Karthik -0.05673
+Kvs Pavan -0.060744
+Snehal Das -0.062003
+Sri Sharan Banagiri -0.062069
+Ajaya Agrawal -0.06296
+Durgaprasad Mohanty -0.064597
+Ak Hil -0.066554
+Bindu Madhavarao -0.066995
+Bala Ji -0.067709
+Sai Kiran Kondaveeti -0.067775
+Anirban Roy -0.068066
+Ghanashyam HS -0.068123
+Vijay Chauhan -0.069097
+Chiru Pawar -0.069611
+Lokesh Gupta -0.069949
+Mani Kanth -0.07098
+Kanchan Yadav -0.073445
+Amandeep Gautam -0.074668
+Sai Ankit -0.075705
+Vidya Sagar -0.076325
+Dheeraj Yadav -0.077806
+Arun Balajiee -0.077859
+Prashanth Reddy -0.077929
+Jayesh Tandle -0.078377
+Sameer Wasnik -0.078623
+Divyanshu Shukla -0.078641
+Subhash Subu -0.079591
+Manik Jindal -0.080454
+Akshay Pamnani -0.081364
+Balasubramaniam Jayaram -0.081478
+Divanshu Chaturvedi -0.081729
+Gaurav Arora -0.084769
+Bhupesh Kumar -0.085272
+Sanjay Mani -0.085316
+Sangeeth Sanal -0.089659
+Surya Prakash Nayak -0.095333
+Aniket Deshmukh -0.096321
+Deepak Suhag -0.09673
+Anil Kumar -0.097347
+Mustafa Baqari -0.097396
+Prince Gupta -0.10337
+Navanshu Ahuja -0.10424
+Vikas Ranga -0.10672
+Ravi Chandra -0.10837
+Deepak Angadi -0.10927
+Jin Sebastian -0.11078
+Dileep Kumar Soma -0.11125
+Ameya Patil -0.11268
+Kayathi Rohith -0.11342
+Ananya Sethi -0.11549
+Aditya Aagare -0.11672
+Parag Saraogi -0.11982
+Izaz Naha -0.1385
+Pushkar Singh -0.14129

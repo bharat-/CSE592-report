@@ -1,13 +1,9 @@
+% Bharat Singh
 % Closeness centrality
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Load friend graph data from file
-data = dlmread('../srikant/ego_nw_srikant.txt');
-
-% Initialize an adjacenty matrix (#friends x #friends)
-
-n = 656;
-m = 10576;
+% Load ego network from file
+data, n, m = get_adj_closeness('ego_nw_srikant.txt')
 
 A = sparse(n, n);
 
@@ -41,12 +37,12 @@ for i = 1:n
             tmp = tmp + 1/dist(i, j);
         end
     end
-    
+
     if (tmp == 0)
         close(i,2) = 0;
         continue;
     end
-    
+
     tmp = (tmp) * (n - 1);
     %tmp_n = (1 / tmp);
 
@@ -57,7 +53,7 @@ end
 % get the nodes with highest closeness values
 closenessCentrality = sortrows(close, -2);
 
-dlmwrite('../srikant/result_closeness_srikant.txt', closenessCentrality, 'delimiter','\t');
+dlmwrite('result_closeness_srikant.txt', closenessCentrality, 'delimiter','\t');
 
 
 

@@ -1,0 +1,656 @@
+William Bryant -0.003016
+Aby Thankachan -0.003016
+Achint Setia -0.003016
+Deborshi Saha -0.003016
+Duygu Boun -0.003016
+Harshit Sethi -0.003016
+Jigar Gosar -0.003016
+Prerna Aggarwal -0.003016
+Santosh Kumar -0.003016
+Ujjwal Kumar -0.003016
+Adi Raval -0.00306
+Fafa M Ruth -0.00306
+Hams SA -0.00306
+Priyankaa Sharma -0.00306
+Surabhi Hans -0.0030607
+Chan Le -0.003061
+Chintan Vora -0.003061
+Sean Karlage -0.0030635
+Rakesh Jaiswal -0.0030657
+Aakash Arun -0.0030781
+Ruby Yadav -0.0030791
+Vishal Parekh -0.0030804
+Abhinav Sharma -0.0030804
+Andrei Marcu -0.0030804
+Athyuttam Reddy -0.0030804
+David Siegal -0.0030804
+Divya Konda -0.0030804
+Joel Sharin -0.0030804
+Maia Hoberman -0.0030804
+Raj Praveen -0.0030804
+Ritesh Kumar Gupta -0.0030893
+Pooja Aggarwal -0.0030936
+Anita Matiyali -0.0031047
+Anshul Mittal 1 -0.0031054
+Manju Mittal -0.0031108
+Aamir Husain -0.0031139
+Arunkumar Ramalingam Ruppin -0.0031149
+Kapil Kumar -0.0031149
+Kishore Kandalai -0.0031171
+Rohini Patil -0.0031171
+Thais Correia -0.0031244
+Machiry Aravind Kumar -0.0031268
+Jesse Chand -0.003127
+Anthony Dubis -0.0031279
+George Mathew -0.0031279
+Leonino Colobong -0.0031279
+Maria Hollweck -0.0031291
+Kaidi Yan -0.003136
+Surendra Singh -0.0031464
+Rohitash Bishnoi -0.0031606
+Jonathan Warner -0.0031757
+Prashant Singh Rathore -0.0031943
+Pritam Sen -0.0032018
+Nishchint Gupta -0.0032179
+Essam Maher AlNaggar -0.0032308
+Honey Chaudhary -0.003236
+Hyla Wallis -0.0032398
+Nikhil Nikki -0.0032441
+Vamiq Mohammed Mustahsan -0.0032571
+Pankaj Kumar -0.0032606
+Mohamed Ghoneim -0.0032689
+Rohit Pardasani -0.0032745
+Vinay Kushappanavar -0.0032748
+Subodh Pandey -0.003287
+Matt Anderson -0.0033049
+Shreeraj Jadhav -0.0033129
+Josh Lear -0.0033245
+Kamlesh Gupta -0.003336
+Amey Dharwadker -0.0033826
+Chandan Kumar -0.0033886
+Priya Goyal -0.0033889
+Ankita Pasricha -0.0033936
+Akshay Aggarwal -0.0033956
+Anubhav Gupta -0.0033984
+Shishir Gupta -0.0033998
+Paul Fodor -0.0034007
+Chitra Mohan -0.003414
+Lokesh Khandelwal -0.0034175
+Sandeep Kumar -0.0034214
+Sanjay Punia -0.0034245
+Shreya Goyal -0.003428
+Nishant Gupta -0.0034387
+Srujan Reddy -0.0034435
+Puneet Garg -0.0034542
+Sanyam Agarwal -0.0034614
+Saivivek Valluru -0.0034707
+Roman Pavlushchenko -0.0034941
+Beijie Li -0.0035105
+Peter Joseph -0.0035114
+Vibha Sinha -0.0035175
+Deepanshu Agarwal -0.003525
+Mukul Gupta 2 -0.003534
+Srikanth Pyaraka -0.0035348
+Kaushik Khatua -0.003544
+Abhishek Sahoo -0.0035494
+Renu Gupta -0.0035524
+Jai Parkash Gupta -0.0035558
+Ashu Malik -0.0035564
+Manish Srivastava -0.0035565
+Puneet Chhabra -0.0035644
+Divya Arun -0.0035801
+Prashanth Kurumaddali -0.003603
+Poonam Anand -0.0036074
+Rahul Goel -0.0036279
+Praveen Soni -0.003632
+Punyata Gupta -0.003638
+Sachin Goel -0.0036407
+Aviral Gupta -0.0036409
+Prasanna Sankaranarayanan -0.0036416
+Gitanjli Jindal -0.0036463
+Gunjan Sharma -0.0036649
+Ruchi Samani -0.003667
+Priyanka Goel -0.0036789
+Durga Murthy -0.0036804
+Amisha Banker -0.0036848
+Giripal Rawat -0.0037007
+Swapnil Mittal -0.003711
+Pooja Gupta -0.0037113
+Harish K Chhabra -0.0037118
+Lilu Surana -0.0037213
+Srikanth Botta -0.0037255
+Jaideep Kumar -0.0037279
+Anupama Singhal Gupta -0.0037493
+Sampath Gopathi -0.0037559
+Sanjay Kumar -0.0037559
+Prateek Srivastava -0.0037631
+Suresh Gupta -0.0037818
+Anoob Anto -0.0037861
+Aviral Shrivastava -0.0037994
+Pathik Sharma -0.003841
+Randhir Kumar -0.0038429
+Abhishek Goyal -0.0038466
+Vishwas B Sharma -0.0038682
+Kinchit Jain -0.0038703
+Gaoyuan Chen -0.0038716
+Durgesh Mishra -0.0038783
+Atiqur Rahman -0.0038825
+Varaprasad Meka -0.0039001
+Pramod Ganapathi -0.003907
+Shridhar Mishra -0.0039073
+Kaushik Devarajaiah -0.0039087
+Megha Bansal -0.0039142
+Nitin Gupta -0.0039253
+Anshuman Abrol -0.0039732
+Abhilash Kumar -0.0039936
+Prince Gupta -0.0039954
+Sanchit Mittal -0.0039988
+Akshay Tapte -0.004013
+Sachin Rathi -0.0040161
+Vijender Kumar -0.004018
+Aditya Raj -0.0040403
+Navya Korimerla -0.0040403
+Mukesh Gupta -0.0040555
+Tanzil Khader -0.0040606
+Apurva Gupta -0.0040774
+Ämit SiƝgh -0.004082
+Surbhi Gupta -0.0040853
+Pavan Lakshmi Kumar -0.0040863
+Purva Gupta -0.0040992
+Mahendra Nimishakavi -0.0041106
+Sakshi Gupta -0.0041135
+Sheetal Chhabra -0.004116
+Gitanjali Malhotra -0.0041257
+Vikas Aggarwal -0.0041373
+Anshu Agarwal Gupta -0.0041527
+Anshul Anshul -0.0041549
+Rakesh Gupta -0.0041589
+Atul Garg -0.0041615
+Manish Kumar Gupta -0.0041619
+Apurva Kumar -0.0041674
+Shreyoshi Prakash -0.0041798
+Swati Gupta -0.0041851
+Sahaya George -0.0041885
+Jatin Sahni -0.004189
+Lalit Gupta -0.0041891
+Krishna Soumya Panditha -0.0041937
+Sanjeev Ramaswamy -0.0042016
+Nirmal Aggarwal -0.0042043
+Perumal Gandhi -0.004226
+Khushboo Gupta -0.0042264
+Sharad Banka -0.0042369
+Naveen Rosario -0.0042451
+Dhruva Kumar -0.0042505
+Neha Jhunjhunwala -0.0042554
+Manchit Gupta -0.0042585
+Rishika Agarwal -0.0042706
+Vinay Raj Kumar Mandaville -0.0042751
+Chaitanya Kumar -0.0042781
+Naman Patel -0.0042889
+Gour Nandi -0.0043141
+Prateek Gupta -0.0043146
+Mansi Bansal -0.0043158
+Ghanshyam Agrawal -0.0043201
+आलोक श्रीवास्तव -0.0043208
+Himanshu Singh -0.0043219
+Swati Aggarwal -0.0043269
+Uma Aggarwal -0.0043306
+Madan Kanth Lanka -0.0043416
+Prashant Aggarwal -0.004348
+Kavita Agarwal -0.0043785
+Prarthana Dixit -0.0043841
+Rahul Rajappa -0.0043871
+Anil Kumar Yanamandra -0.0043904
+Mintu Kumar -0.0043959
+Eti Gupta -0.0044074
+Arvind Chaudhary -0.0044159
+Avi Srivastava -0.0044221
+Venkata Namburi -0.0044307
+Kuleshwar Prasad -0.0044387
+Shrikant Agrawal -0.0044507
+Shashi Ranjan -0.0044747
+Shiva Krishna K -0.0044762
+Michan Mohajeri -0.0044764
+Sugeeta Sachin Sharma -0.0045004
+Akshit Passi -0.0045114
+Bhaskar Devariya -0.0045156
+Prerna Mayur Malhotra -0.0045181
+Nishant Aggarwal -0.0045262
+Puneet Singh -0.0045345
+Bhavna Pankaj Aggarwal -0.0045356
+Charu Gupta -0.0045384
+Upasana Rustagi -0.0045412
+सौरभ गुप्ता -0.0045437
+Bunkerz Inks Bharat -0.0045552
+Vishal Munka -0.0045678
+Shweta Thakral Gaba -0.0045787
+Ritesh Goel -0.0045898
+Ravi Kiran Tummala -0.0045911
+Naman Mittal -0.0046126
+Ankush Singla -0.0046228
+Ritwik Das -0.0046422
+Tushar Aggarwal -0.0046463
+Sanket Pandey -0.0046847
+Shruti Gupta -0.0046856
+Praveen Prakash -0.0046863
+Kumar Saurabh -0.0047002
+Gautam Goswami -0.0047059
+Ashwin Giridharan -0.0047083
+Sumit Maheshwari -0.0047525
+Mohit Mittal -0.0047585
+Pooja Bindal -0.00481
+Ashish Singh -0.0048127
+Himanshu Kapoor -0.0048172
+Priyanka Bansal -0.0048252
+Tarun Aggarwal -0.0048281
+Sumit Aggarwal -0.0048708
+Harish Katagall -0.0048733
+Sujan Bolisetti -0.0048759
+Ankur Maheshwari -0.0048824
+Pankaj Aggarwal -0.0048828
+Rajat Goyal -0.0049088
+Rajesh Golani -0.0049095
+SrikanthVihari Kothapalli -0.0049201
+Aadarsh Kenia Anshul Mittal 2 Mukul Gupta 2 Saurabh Aggarwal 2 Shashank Jain 2 Siddharth Jain 2 -0.0049235
+Vikas Kumar Gupta -0.004935
+Saurabh Dandona -0.0049448
+Utfull Kaushik -0.0049554
+Ajay Garg -0.0049809
+Niketa Jain -0.0049967
+Piyush Garg -0.0049981
+Puneet Taneja -0.0050129
+Ashutosh Gupta -0.005021
+Deepak Gupta -0.0050228
+Shubham Srivastava -0.0050271
+Ankur Singhal -0.0050283
+Sonal Aggarwal -0.0050342
+Namrata Sikaria -0.0050516
+S Sharique Ahmad -0.0050953
+Priyaranjan Pandey -0.0051089
+Prashant Pandey -0.0051134
+Neha Garg -0.0051138
+Ravi Chandra Sadineni -0.0051232
+Rahul Goyal -0.0051432
+Ishan Bhatnagar -0.0051547
+Nisha Garg -0.0051622
+Rahul Raj -0.005173
+Navin Agarwal -0.0051804
+Abhishek Gupta -0.0052341
+Samudra Banerjee -0.005247
+Tapan Bansal -0.0052562
+अंकुश गोयल -0.0052619
+Gagan Nagaraju -0.005305
+Kannu Monga -0.0053104
+Nitish Garg -0.0053175
+Anchal Goyal -0.0053342
+Sangeeta Jain -0.0053632
+Manuj Kumar -0.0053826
+Sweta Agrawal -0.0053861
+Dushyant Goyal -0.0053882
+Vishwas Gupta -0.0053957
+Sachin Richard -0.005406
+Akashdeep Nain -0.0054082
+Manish Agarwal -0.0054296
+Ansh Aggarwal -0.0054353
+Rearden Hank -0.0054365
+Rahul Singhal -0.0054389
+Prasoon Kumar -0.0054411
+Ashwin Tumma -0.0054668
+Vijay Hemgude -0.0054718
+Stony Brook CompSci -0.0054737
+Parul Goyal -0.0054867
+Hirak Sarkar -0.005497
+Astro Lakshay -0.0055165
+Sagar Dhavali -0.0055431
+Chaitanya Saxena -0.0055647
+Sushant Aggarwal -0.0055702
+Himanshu Arya -0.0055777
+Neha Aggarwal -0.0055862
+Vishal Nayak -0.005602
+Dipesh Kumar Yadav Dky -0.0056085
+Sree Harsha Subraveti -0.0056362
+Bharat Singh -0.0056405
+Kavana Anand -0.005661
+Varun Monga -0.0056706
+Sarvesh Kumar Verma -0.0056782
+Muthukumar Suresh -0.0057406
+Jitendra Kumawat -0.0057809
+Keerthan Reddy -0.0058318
+Himanshu Shah -0.0058378
+Manoj Mahore -0.0058609
+Anuj Chauhan -0.0058625
+Vijay Sharma -0.005879
+Simranjit Singh Sikka -0.0058867
+Madhusudhan Reddy Gayam -0.0058978
+Sahil Parmar -0.0059065
+Aashray Arora -0.0059449
+Kanchan Chandnani -0.0059915
+Ompal Aggarwal -0.0060184
+Shraddha Vishwanathan -0.0060362
+Abhishek Aggarwal -0.0060993
+Ravi Kumar -0.006117
+Vivek Kulkarni -0.0061249
+Manish Singhal -0.0061516
+Dipti Ranjan Behera -0.0062008
+Sidhartha Thota -0.0062102
+Eshita Bheda -0.0062172
+Ankur Mittal -0.00622
+Santosh Ghosh -0.0062367
+Mayank Gupta -0.0062493
+Dontu Balu -0.0062705
+Rohan Bharadwaj -0.006276
+Ajay L Kutnikar -0.0062764
+Nitish Gupta -0.0063074
+Tanvi Sirsat -0.0063105
+Bidisha Goswami -0.0063145
+Paul Mathew -0.006389
+Sruthi Mandadapu -0.006437
+Priyanka Tripathi -0.0064436
+Varun Johri -0.0064745
+Rakesh Chada -0.0064908
+Aman Mahajan -0.0065414
+Ahmed Aly -0.0065594
+Anjali Aggarwal -0.0065904
+Ayush Sengupta -0.0066145
+Shivangi Wahie -0.0066654
+Shrey Shah -0.0066872
+Amit Khandelwal -0.0067226
+Ankit Arun -0.0067629
+Nimish Agrawal -0.0068077
+Komal Sanjeev -0.0068284
+Neeraj Gupta -0.0068797
+Varun Kumar Vala -0.0069442
+Rahul Saxena -0.0069558
+Mohit Singhal -0.007005
+Shirisha Kandalai -0.0070342
+Pranav Jain -0.0070969
+Surabhi Talwar -0.0071363
+Archit Thakur -0.0072023
+Akash Jindal -0.0072304
+Satyam Bansal -0.0072334
+Ankur Sharma -0.0072759
+Raghavendra Raghu -0.0072838
+Devesh Batra -0.0073205
+Manpreet Singh Chhatwal -0.0073249
+Chaitanya Bandi -0.0073416
+Afroz Alam -0.0073501
+Prabal Gupta -0.0073613
+Shobhit Raj Mittal -0.0073716
+Nsit Alumnus -0.0073831
+Pavan Manjunath -0.0074103
+Abhishek Kharb -0.0074156
+Chetan Naik -0.0074299
+Neeraj Narang -0.0074461
+Naren Badsara -0.007577
+Gaurav Gawde -0.0076139
+Rajat Rajput -0.0076337
+Sriganesh Navaneethakrishnan -0.0076671
+Ankur Singh -0.0076849
+Sachin Choudhary -0.0076993
+Vinay Khandelwal -0.007705
+Anudeep Nekkanti -0.0077189
+Devesh Kandpal -0.0078258
+Gourav Singhal -0.007858
+Vineet Paliwal -0.0078875
+Smit Hinsu -0.0079658
+Nikunj Banka -0.0081267
+Mayank Jain -0.0081411
+Ritvik Sadana -0.0081814
+Garima Gulati Bhutani -0.0082375
+Abhishek Jindal -0.0082629
+Animesh Gupta -0.0082632
+Sameer Jain -0.0082802
+Shubham Mittal -0.008356
+Adheesh Gokhale -0.0083773
+Gaurav Rana -0.0084574
+Shashank Jain 2 -0.0084608
+Aman Agarwal -0.0085243
+Piyush Gandhi -0.0085602
+Sachin Midha -0.008577
+Neha Dhingra -0.0086223
+Jolly Paramjit -0.0086386
+Aaswad Satpute -0.0087591
+Udit Gupta -0.0087719
+Harpreet Bindra -0.0088511
+Amit Gupta -0.0088801
+Harshit Rao -0.0089219
+Vivek Yadav -0.0089693
+Praveen Alam -0.0089733
+Nupoor Maheshwari -0.0089894
+Varun Batra -0.0090062
+Daksh Talwar -0.0090493
+Abhinav Agarwal -0.0090696
+Sunil Singh -0.009122
+Ishita Gupta -0.0091493
+Pawandeep Singh -0.0091653
+Jashan Jot Singh -0.0093012
+Ankur Khurana -0.0094937
+Karishmatic Sandhya -0.0097292
+Nitish Aggarwal -0.0098026
+Shwetank Gupta -0.0098886
+Saurabh Verma -0.0099576
+Shyam Mohan Gupta -0.01002
+Sohil Gandhi -0.010041
+Aditya Soni -0.010099
+Ikshu Bhalla -0.010191
+Vishal Salgotra -0.010214
+Saurabh Agarwal -0.010669
+Vivek Doegar -0.01073
+Sunny Kumar -0.010878
+Nivedita Arora -0.011034
+Satyabrata Nayak -0.011081
+Kunal Arora -0.011138
+Sidhant Goyal -0.011176
+Varun Kapoor -0.011282
+Vaibhav Mittal -0.011306
+Vineet Hassija -0.011371
+Amim Rehman -0.011539
+Amit Singh Kashyap -0.011578
+Mahtab Singh -0.011621
+Shashank Gupta -0.011664
+Siddharth Saluja -0.011846
+Kunaal Ahuja -0.011897
+Pratyush Sharma -0.011942
+Sandeep Saharawat -0.011946
+Pragya Gupta -0.012112
+Piyush Goyal -0.012301
+Karandeep S. Bhatia -0.012374
+Mohit Arora -0.012378
+Vijay Kansal -0.012483
+Rishul Aggarwal -0.012662
+Ashish Rawat -0.012675
+Rahul Kathuria -0.012932
+Rahul Duggal -0.013159
+Malay Keshav -0.013218
+Ashish Bhandari -0.01341
+Varun Singh -0.013943
+Manmohan Gupta -0.014152
+Johar Singh Walia -0.014159
+Satyendra Singh -0.014197
+Nishant Bharti -0.014472
+Varun Sharma -0.01454
+Puneet Rastogi -0.014544
+Mukul Gupta 1 -0.01456
+Pulkit Jindal -0.01492
+Rahul Gandhi -0.01538
+Tushant Saxena -0.015491
+Sandeep Mehta -0.015652
+Aseem Goyal -0.015871
+Amit Chhabra -0.015898
+Anket Dhulekar -0.015975
+Siddharth Jain 2 -0.016083
+Anshul Gupta -0.016413
+Saurabh Modi -0.016879
+Aditya Bindal -0.017111
+Shikkha Saxena -0.017186
+Amit Singh -0.017915
+Manjot Pahwa -0.017939
+Tusshar Singh -0.018213
+Manish Kapur -0.018291
+Sachin Mohan -0.018849
+Swati Raghunandan -0.020182
+Rahul Kalra -0.020185
+Babloo Saha -0.021046
+Manish Tiwari -0.022143
+Harpreet Kaur -0.022764
+Rajat Talwar -0.023649
+Yash Datta -0.024427
+Ashi Malhotra -0.025813
+Vipin Kumar -0.027634
+Mohd Imran Khan -0.029716
+Deepank Gupta -0.032186
+Kunal Rustogi -0.032712
+Anant Shankar -0.032789
+Bhuvnesh Agrawal -0.033073
+Deepika Mangla -0.033142
+Shweta Gulati -0.033155
+Himanshu Chawla -0.037272
+Nsit Connect -0.0376
+Ganesh Ramanan -0.038933
+Varun Khurana -0.039006
+Vikas Gupta -0.04052
+Nalin Savara -0.040663
+Vidush Sain -0.040772
+Aditya Monga -0.043399
+Manish Garg -0.044011
+Sachin Patwal -0.044365
+Sunny Sharma -0.045649
+Kamal Arora -0.045704
+Arpit Wanchoo -0.046319
+Virender Kumar Jain -0.047059
+Swati Bhatia -0.047572
+Minu Tongaria -0.047782
+Anshul Mehta -0.048044
+Nalin Savara-Nsit -0.048421
+Lokesh Goel -0.048726
+Kamal Sadh -0.048922
+Shashank Jain 1 -0.049279
+Ashwani Grover -0.049794
+Nitin Gangwani -0.050155
+Rohan Mahajan -0.051306
+Ankit Kindra -0.051704
+Risha Agarwal -0.052577
+Manav Raman -0.052608
+Siddharth Saras -0.05319
+Jai Jaswani -0.053615
+Priyanka Garg -0.053954
+Neelesh Gupta -0.053982
+Shreesh Kaushik -0.054623
+ChinkhanSiam TungLut -0.055167
+Gauravv Chowdhryy -0.055671
+DitNsit AlumniAssoc -0.055962
+Aditya Malhotra -0.055964
+Abhilekh Malhotra -0.056117
+Harsha Vardhan -0.058102
+Sachin Shokeen -0.058523
+Rahul Shresth -0.058779
+Ratandeep Singh -0.059017
+Siddharth Jain 1 -0.059061
+Shailendra Kumar -0.059388
+Ramit Sharma -0.059727
+Vaibhav Khandelwal -0.060146
+Hitender Gupta -0.060161
+Manu Krishna Saxena -0.060362
+Ruchika Mendiratta -0.060781
+Arpit Malhotra -0.060869
+Praveen Chaudhary -0.061571
+Nikhil Taneja -0.062099
+Abhishek Rawat -0.062449
+Sanchit Aggarwal -0.062597
+Partha Biswas -0.062677
+Puneet Sapra -0.063473
+Aashoo Kukreja -0.0637
+Himanshu Dahiya -0.064021
+Shailesh Singh -0.064338
+Sudhanshu Dhamija -0.064779
+Mohit Gupta -0.065431
+Puneet Pruthi -0.065657
+Aditya Vikram Jain -0.065926
+Nitesh Gupta -0.066592
+Karan Kumar -0.067181
+Suraj Jain -0.067338
+Ankit Agrawal -0.067705
+Puneet Sahani -0.067872
+Sahil Mittal -0.06876
+Arjun Sarwal -0.069043
+Vaibhav Joneja -0.071537
+Divya Arya -0.071587
+Vijayant Bhardwaj -0.07171
+Anushree Singhal -0.072229
+Rahul Jain -0.072385
+Girish Singhi -0.073021
+Saurabh Singh -0.073759
+Lalit Vohra -0.074189
+Anshul Mittal 2 -0.075381
+Jasleen Arora -0.076501
+Robin Mittal -0.076533
+Ajay Chauhan -0.07681
+Abhineet Yadav -0.07721
+Siddharth Sharma -0.077766
+Manu Sheel Gupta -0.079622
+Sanchay Singla -0.080177
+Nikhil Bajaj -0.080293
+Bhavya Jaitly -0.080556
+Yatharth Bhaskar -0.080574
+Neha Sardana -0.080851
+Naveen Jindal -0.081016
+Justin Cherian -0.081041
+Sachin Meena -0.081089
+Samarth Kaushik -0.081367
+Manu Aggarwal -0.081733
+Paras Arora -0.081994
+Neeraj Kumar -0.082304
+Gaurav Yadav -0.082691
+Deepika Raj -0.084094
+Abhijeet Singh -0.08494
+Jai Sanghai -0.084995
+Rajat Jawa -0.085035
+Rajesh Garg -0.085535
+Prachi Jain Raman -0.085888
+Kriti Sharma -0.085889
+Deepansh Agrawal -0.08612
+Pratibha Malik -0.086256
+Neha Agrawal -0.087074
+Neha Dar -0.087392
+Vijay Majumdar -0.087523
+Amit Arora -0.087765
+Vikas Goyal -0.087785
+Deepika Solanki -0.088439
+Abhishek Bansal -0.089258
+Abhay Singh -0.089949
+Atish Roy -0.094252
+Debanjan Dey -0.094848
+Saurabh Aggarwal 1 -0.095332
+Akshay Gupta -0.095562
+Sumit Kumar -0.095646
+Aditya Rohit -0.09767
+Payas Talwar -0.098156
+Chander Goyal -0.0985
+Nishant Pandey -0.099689
+Rohit Kothari -0.099804
+Ashish Sharma -0.10002
+Sharad Kaushik -0.10086
+Ushin Vakil -0.10114
+Suraj Singh -0.10165
+Gaurav Bhardwaj -0.10228
+Chandan Garg -0.1032
+Chetan Garg -0.1032
+Saurabh Jairath -0.10326
+Kamayani Nerwal Saras -0.10354
+Rahul Agrawal -0.10552
+Rahul Chhabra -0.10666
+Piyush Gupta -0.10756
+Anshul Kumar Tamta -0.10804
+Saurabh Aggarwal 2 -0.11178
+Deepesh Chandhok -0.11277
+Shrey Sehgal -0.11329
+Chhavi Arora -0.11391
+Saurabh Dabra -0.11843
+Mayank Lodha -0.11896
+Shubham Agarwal -0.12042
+Sombir Ahlawat -0.12397
+Rishabh Jaiswal -0.12644
+Ankur Malhotra -0.12753
+Nikhil Gupta -0.12803
+Ekansh Kumar -0.13023
+Srikant Aggarwal Anshul Mittal 1 Mukul Gupta 1 Saurabh Aggarwal 1 Shashank Jain 1 Siddharth Jain 1 -0.20984

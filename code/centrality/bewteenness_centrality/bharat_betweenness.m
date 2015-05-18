@@ -2,13 +2,12 @@
 % Betweenness centrality
 
 % Load friend graph data from file
-data = dlmread('../../../project/arvind/ego_nw_arvind.txt');
+data, n, m = get_adj('ego_nw_arvind.txt');
+
+%dlmread('../../../project/arvind/ego_nw_arvind.txt');
 
 % Initialize an adjacenty matrix (#friends x #friends)
-n = 508;
-m = 16485;
-
-A = sparse(n, n);  
+A = sparse(n, n);
 
 % Populate the adjacenty matrix from loaded data
 for i = 1:m
@@ -30,5 +29,5 @@ for i = 1:n
 end
 
 betCentrality = sortrows(betweenness, -2);
-dlmwrite('../../../project/arvind/result_between_arvind.txt1', betCentrality, 'delimiter','\t');
+dlmwrite('result_between_arvind.txt', betCentrality, 'delimiter','\t');
 

@@ -1,0 +1,120 @@
+=======================
+=======================
+k = 3
+Sohil Gandhi
+Karthik Venkat
+Ramesh Babu
+
+=======================
+=======================
+k = 5
+Subhash Chugh
+Aaswad Satpute
+Sowmya Gowda
+Karthik Venkat
+Ajay Singh
+
+=======================
+=======================
+k = 7
+Rashik Kumar
+Yogesh Meena
+Gyanendra Chaubey
+Karthik Venkat
+Ajay Yadav
+Sowmya Gowda
+Jason Sun
+
+=======================
+=======================
+k = 10
+Abhay Roark Singh
+Rajat Singh
+Subhash Chugh
+Rohitash Bishnoi
+Sowmya Gowda
+M.s. Srivatsa
+Ayoosh Bansal
+Gyanendra Chaubey
+Aaswad Satpute
+Ajay Singh
+
+=======================
+=======================
+k = 12
+Shri Kant Verma
+Gyan Prakash
+Shivam Singhal
+Amar Potnuru
+Anand Shukla
+Praveen Kumar
+Aaswad Satpute
+Ashish Chaudhary
+Jai Prakash Rai
+Anjani Kumar
+Gyanendra Chaubey
+Happy Singh
+
+=======================
+=======================
+k = 15
+Kirti Jaya Tiwari
+Rakindi Srikanth
+Amar Potnuru
+Sohil Gandhi
+Divya Kumar Gupta
+Sowmya Gowda
+Surya Prakash Singh
+Abhay Roark Singh
+Rahul Agrawal
+Anjani Kumar
+Ajay Yadav
+Ambrish Awasthi
+Sweetesh Singh
+Rohit Kapoor
+Avi Srivastava
+
+=======================
+=======================
+k = 17
+Parv Tamrakar
+Dhananjay Mishra
+Ajay Yadav
+Smit Kumar
+Surya Prakash Singh
+Amit Khandelwal
+Abhishek Upadhyay
+Srikant Aggarwal
+Gaurav Aggarwal
+Dhirendra Rajput
+Sowmya Gowda
+Pulkit Agarwal
+Ayoosh Bansal
+Vikas Das
+Sourav Garg
+Karthik Venkat
+Happy Singh
+
+=======================
+=======================
+k = 20
+Nikhil Kathare
+Nitesh Malhotra
+Rishabh Agarwal
+Anand Shukla
+Yogesh Patel
+Ashish Kumar
+Yogesh Meena
+Neha Srinivas
+Pradeep Radhakrishnan
+Raj Vaibhav
+Shobhit Mehrotra
+Aaswad Satpute
+Suraj Agarwal
+Manohar Dutt
+Sweetesh Singh
+Sandeep Singh
+Rashik Kumar
+Sachin K Dhakvakra
+Gyanendra Chaubey
+Ajay Singh

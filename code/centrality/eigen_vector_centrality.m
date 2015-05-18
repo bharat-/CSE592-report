@@ -1,11 +1,9 @@
+% Bharat Singh
 % Eigen vector centrality
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Load friend graph data from file
-data = dlmread('../bharat/ego_nw_bharat.txt');
-
-n = 1998;
-m = 66673;
+% Load ego network from file
+data, n, m = get_adj('ego_nw_bharat.txt');
 
 % Initialize an adjacenty matrix (#friends x #friends)
 A = zeros(n, n, 'double');
@@ -14,6 +12,7 @@ A = zeros(n, n, 'double');
 for i = 1:m
     row=data(i,1);
     col=data(i,2);
+	% no need to avoid ego node
     %if row == 1 || col == 1
         %continue;
     %end
@@ -24,18 +23,18 @@ end
 % Calculate the eigen values and eigen vectors
 [eigVectors,eigValues,W] = eig(A);
 
-% Max eigen value is at 452 
+% Eigen values are sorted, so take the highest one
 max = n;
 
 y=eigVectors(:, max);
 
-% max value 
+% max value
 for i = 1:n
     eig1(i,1) = i;
     eig1(i,2) = y(i);
 end
 
-eigCentrality = sortrows(eig1, -2);	
-dlmwrite('../bharat/result_eigen_bharat.txt', eigCentrality, 'delimiter','\t');
+eigCentrality = sortrows(eig1, -2);
+dlmwrite('result_eigen_bharat.txt', eigCentrality, 'delimiter','\t');
 
 

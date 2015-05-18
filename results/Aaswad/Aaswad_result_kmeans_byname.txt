@@ -1,0 +1,105 @@
+=======================
+=======================
+k = 3
+Durvesh Patil
+Saurabh Netravalkar
+Ziya Ye
+
+=======================
+=======================
+k = 5
+Rong Zou
+Olivia Panjam
+Rishabh Jhunjhunwala
+Pooja Deo
+Ziya Ye
+
+=======================
+=======================
+k = 8
+Zhihong Lim
+Chirayu Shah
+Nehal Darji
+Bhavana Patil
+Anil Satpute
+Nupur Bansal
+Jinav Shah
+Zubaida Shaikh
+
+=======================
+=======================
+k = 10
+Sriganesh Navaneethakrishnan
+Gandhali Karnik
+Adiba Khateeb
+Ankita Arya
+Jeenal Kava
+Lathika Pillai
+Panchen Xue
+Saurabh Netravalkar
+Kapil Gadhire
+Ziya Ye
+
+=======================
+=======================
+k = 15
+Anil Satpute
+Sudeep Pottabatti
+Gautam Nichlani
+Milind Pingle
+Panchen Xue
+Adheesh Gokhale
+Manish Singh
+Rakesh Patel
+Aneesh Shetye
+Saurabh Dawle
+Jagruti Kamat
+Neha Doke
+Durvesh Patil
+Lathika Pillai
+Zalavadiya Sunny
+
+=======================
+=======================
+k = 17
+Vaishali Padhiyar
+Prashant Khade
+Priya Sharma
+Gauri Walinjkar
+Jasmine Li Wang
+Alifiya Bhanpurawala
+Nishchal Sharma
+Gaurav Kaushik
+Christopher George
+Panchen Xue
+Abhishek Satpute
+Prasidh Srikanth
+Lathika Pillai
+Saurabh Netravalkar
+Shashank Jain
+Kanchan Chandnani
+Zeal Doshi
+
+=======================
+=======================
+k = 20
+Yu Xing
+Devashish Thakur
+Deepak Kumar B
+Sanjivani Patil
+Ayushi Verma
+Zhihong Lim
+Mayur Waman Padate
+Nishchal Sharma
+Bharat Singh
+Vikash Pandey
+Banafsha Shaikh
+Kapil Gadhire
+Sayali Metha
+Tony Zheng
+Lathika Pillai
+Prakhar Dhruv Todaria
+Adheesh Gokhale
+Anjor Shubhangi Hemant
+Saurabh Netravalkar
+Zalavadiya Sunny
