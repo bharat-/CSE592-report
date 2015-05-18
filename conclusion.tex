@@ -11,24 +11,27 @@
 %
 %Key: give reader the "take home" message.
 
-We have introduced a UID based authentication mechanism inside
-eCryptfs.  It is an additional check to prevent unauthorized users
-inside a trusted host environment from accessing the encrypted data,
-even root user is not allowed.  Based on our results we see that this
-mechanism works for all type of users irrespective of their privilege
-level and does not add much overhead in the performance of eCryptfs.
-This policy based access control can be extended to other parameters
-like process id, tty, application.
+We found important nodes in an ego network using different centrality
+measures.  Also we found the important nodes by dividing the ego
+network using k-means clustering and reporting the centroid as the
+important node.  We see that eigenvector centrality is the most
+accurate measure of the identifying the important nodes.  Closeness
+centrality also performs well as compared to betweenness centrality.
+We also see that k-means clustering also identifies the important node
+when number of communities are more than 5.  We can conclude that some
+nodes are more important than other for one measure, but less
+important for different measure.  There are nodes also, that are
+important for all kind of measures of importance.
 
 \paragraph{Future Work}
-We plan to integrate role based access control (RBAC) with flexible
-number of admin and users using the system.  We will extend the access
-policies employing restrictions based on pid, sid, process name, etc.
-To address the problem of non-persistent super block, we plan to add a
-policy file for eCryptfs to make the \emph{ecryptfs\_allowed\_list}
-persistent across reboot/remounts.  As of now Linux kernel keyring
-supports key expiration, but eCryptfs does not.  We plan to add the
-key expiration support to eCryptfs.
+We plan to extend k-means clustering algorithm by not reporting the
+centroid of the cluster as important node.  We'll run eigenvector
+centrality algorithm on each cluster and then report the important
+nodes.  We'll also try to improve the betweenness centrality as
+current betweenness centrality algorithm is not applicable to
+disconnected graphs.  And presence of ego affects the outcome of the
+algorithm severely most of the shortest paths will pass through ego,
+and the distance can not be more than 2.
 
 %Future work text...
 %
