@@ -60,6 +60,51 @@
 %
 %7.  Optional: if eval section longer than usual, end it with a
 %one-paragraph summary of eval results.
+
+\begin{table*}[th]
+\small
+\centering
+\begin{tabular}{ c|c|c|c|c|c|c|c|c| }
+\hline
+\multicolumn{1}{|c|}{\textbf{Algorithm}} &
+\multicolumn{2}{c}{\textbf{Aaswad}}&
+  \multicolumn{2}{|c|}{\textbf{Arvind}} &
+  \multicolumn{2}{|c|}{\textbf{Srikant}} &
+  \multicolumn{2}{|c|}{\textbf{Bharat}} \\
+  \cline{2-9}
+  \multicolumn{1}{|c|}{} &
+  Correct & In-correct & Correct & In-correct & Correct & In-correct & Correct & In-correct \\  \hline
+    \hline
+  \multicolumn{1}{|c|}{\textbf{K-means}}
+& 50.0 & 50.0 & 67.41 & 32.58 & 55.68 & 44.31 & 66.29 & 33.70 \\ \hline
+  \multicolumn{1}{|c|}{\textbf{Eigen-vector}}
+& 86.66 & 13.33 & 90.0 & 10.0 & 86.66 & 13.33 & 83.33 & 16.66 \\ \hline
+  \multicolumn{1}{|c|}{\textbf{Betweenness}}
+& 73.33 & 26.66 & 70.0 & 30.0 & 66.66 & 33.33 & 76.66 & 23.33\\  \hline
+  \multicolumn{1}{|c|}{\textbf{Closeness}}
+& 76.66 & 23.33 & 86.66 & 13.33 & 76.66 & 23.33 & 73.33 & 26.66 \\ \hline
+\end{tabular}
+
+\caption{\capfont Accuracy (in \%) of prediction vs validated data from users}
+\label{tab:Accuracy of Algorithms}
+\end{table*}
+
+
+
+\begin{figure*}[ht]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/social-result_arvind.eps}
+    \caption{Comparison of accuracy of algorithms, based on validated result data from Arvind.}
+    \label{fig:social-result-arvind}
+\end{figure*}
+
+\begin{figure*}[ht]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/social-result_arvind_kmeans.eps}
+    \caption{Comparison of accuracy of K-means on varying k, based on validated data from Arvind.}
+    \label{fig:social-result-arvind-kmeans}
+\end{figure*}
+
 \begin{figure*}[ht]
     \centering
     \includegraphics[width=1\textwidth]{figures/social-result_eigen.eps}
