@@ -144,6 +144,14 @@ measures.
 
 \input{table-results.tex}
 
+\paragraph{Result validation}
+We run the experiments on \emph{4} different ego networks collected
+from our friends.  To verify the experimental results with the grund
+truth data, we send the top 30 nodes to the users to verify how many
+of the are actually important.  Their reponse is treated as
+\emph{verified ground truth} and is used to compare the efficiency of
+algorithms.
+
 We also had run k-means clustering algorithm on the ego network for
 different k values.  For k-means clustering we have used shortest path
 distance between two nodes after excluding the ego from the graph as a
@@ -158,11 +166,9 @@ works best for k=15 and worst for k=3.  A size 3 ego-network is not
 very practical scenario, so its results are not accurate.  Accuracy of
 kmeans is more than \emph{60\%} for all other cases.
 
-\paragraph{Comparison of accuracy}
-To verify the the experimental results with the ground truth data, we
-send the top 30 nodes to the users to verify how many of them are
-actually important.  Then based on their response we find the accuracy
-of the algorithm in terms of \% match.  In
+\paragraph{Accuracy of algorithms}
+We compare the experimental results with the verified grund truth
+and find the accuracy of an algorithm in terms of \% match.  In
 Figure~\ref{fig:social-result-arvind} we compared the results from ego
 network of \emph{Arvind} with the ground truth data.  In this we have
 taken mean accuracy of k-means along with accuracy of others. It shows
